@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+        <link rel="stylesheet" type="text/css" href="styles.css" /> 
+ 
+		<meta name="description" content="overgrown" />  
+        
+		<title>Overgrown</title>
+        
+        <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600" rel="stylesheet">
+        
+        
+<!--        jquery-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <!--        gsap-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!--        scrollmagic-->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>     
+    <!--        indicators-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+<!--        gsap animation-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
+        
+        
+        <style>
+            body{
+                background-color: #29335B;
+            }
+            .bubble{position:relative}
+        </style>
+        
+        
+        
+        
+    </head>
+    
+    <body>
+        
+      
+        
+        
+        <section class="fullsize big">
+            <img src="02/02_panel_01.jpg" >
+            <img src="02/02_eye_a.png" class="eye" style="margin-top:-585px; margin-left:142px" width="200px">
+            <img src="02/02_eye_b.png" class="eye" style="margin-top:-599px; margin-left:641px" width="260px">
+            <img src="02/02_eye_c.png" class="eye" style="margin-top:-245px; margin-left:560px" >
+        </section>
+        
+        <section class="desktopbubbles"><br></section>
+        <br><br>
+        
+        <section>
+            <img src="02/02_panel_02.png">
+        </section>
+        
+        <br><br>
+        
+        <section id="phone02">
+            <img src="02/02_panel_03.gif" class="glitch02">
+            <p class="bubble bphone" style="margin-top:-280px; margin-left:60px;">
+            whaaat...</p>
+        </section>
+      
+        
+        <section style="max-height: 1400px; " >
+            <img src="02/02_panel_05.jpg" >
+            <p class="bubble" style="margin-top:-1250px; margin-left:230px;">
+                    is my phone...?</p>
+            <img src="02/02_fey.png" id="fey" style="margin-top:-1000px;
+        position: absolute;">
+            
+         </section>
+        
+        <section id="bottom02" style="top: -800px;
+        margin-bottom: -1200px; 
+        width:1000px;" >
+            
+<!--            position:ab-->
+            <img src="02/02_panel_06.png" style="position:absolute;" class="desktopbubbles" >
+            
+            <img src="02/02_panel_06.png"  class="mobilebubbles">
+            
+<!--            margin-top:480-->
+            <p class="bubble desktopbubbles" width="50px" style="margin-top:100px; margin-left:400px;" >
+                ...nope</p>
+            
+            <p class="bubble mobilebubbles" width="50px" style="margin-top:-480px; margin-left:400px;"  >
+                ...nope</p>
+
+        </section>
+        
+        
+        
+        <section class="pagination" style="bottom: 10px; ">
+                <a href="01c.html"> ❮ Back </a>
+                <a href="01c.html">Home</a>
+                <a href="03b.html">Next ❯ </a>
+        </section>
+        
+        
+        
+<!--
+        
+        <section id="fey">
+            <img src="https://78.media.tumblr.com/bb1fc83f3d5ed08f5778e7cb0f93c3ff/tumblr_pbzqwf6sDV1xurc3ko5_1280.png">    
+            </section>
+            
+            <section id="bottom">
+                <img src="https://78.media.tumblr.com/b59c26c94a9a0033d8af8d8111758ff9/tumblr_pbzqwf6sDV1xurc3ko8_r1_1280.png">  
+-->
+    
+    
+    
+        
+        
+        
+        <script>
+           $(document).ready(function () {
+       
+    
+    var controller = new ScrollMagic.Controller();
+    
+
+  
+    //PHONE
+    
+
+    
+     var phone = new TimelineMax();
+                
+                phone.from(".glitch02", .1, {opacity:0,})
+               .from(".bphone", .5, {opacity:0,})
+               
+//                    .from(".b", 5, { left: -600 })
+
+                
+    ;
+    
+         new ScrollMagic.Scene({
+        //options for scene inside, id trigger, duration
+        triggerElement: "#phone02", duration: 0, triggerHook: .5
+    })
+        
+        .setTween(phone)
+    
+//        .addIndicators({name: "phone", })
+        .addTo(controller);
+        
+        
+    ////FEY
+        
+    var fey = new TimelineMax();
+        
+        fey.from("#fey", 1, {opacity:0})
+        ;
+        
+        
+        new ScrollMagic.Scene({
+     triggerElement: "#fey", duration: 700, triggerHook: .5,
+            
+        })
+        
+        
+        .setTween(fey)
+        
+//        .addIndicators({ name: "fey" })
+        
+        .addTo(controller);
+               
+///PARALLAX
+    
+if ( $(window).width() > 1080) {   
+               var bottom = new TimelineMax();
+        
+            bottom
+                .to("#bottom02", 1.5, {bottom:0})
+               .from(".pagination", 1, {opacity:0})
+//               .to("#bottom02", .1, {opacity:0})
+        ;
+//        
+        
+        new ScrollMagic.Scene({
+     triggerElement: "#bottom02", duration: 400, triggerHook: .4,
+            
+        })
+        
+        
+        
+               
+        .setPin("#bottom02")
+        .setTween(bottom.delay(5))
+               
+        
+//        .addIndicators({name: "bottom" })
+        
+        .addTo(controller);
+    
+    
+        }
+               
+else {
+    
+    var bottom = new TimelineMax();
+        
+            bottom
+                .to("#bottom02", 1, {bottom:0})
+               .from(".pagination", 1, {opacity:0})
+//               .to("body", .1, {backgroundColor:"#fff"})
+        ;
+//        
+        
+        new ScrollMagic.Scene({
+     triggerElement: "#bottom02", duration: 500, triggerHook: .66,
+            
+        })
+        
+        
+        
+               
+        .setPin("#bottom02")
+        .setTween(bottom.delay(5))
+               
+        
+//        .addIndicators({ name: "bottom" })
+        
+        .addTo(controller);
+    
+    
+}               
+      
+           }    );
+               
+               
+        </script>
+    
+    </body>
+    
+    </html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+        <link rel="stylesheet" type="text/css" href="styles.css" /> 
+ 
+		<meta name="description" content="overgrown" />  
+        
+		<title>Overgrown</title>
+         
+        <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600" rel="stylesheet">
+        
+        
+<!--        jquery-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <!--        gsap-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!--        scrollmagic-->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>     
+    <!--        indicators-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+<!--        gsap animation-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
+        
+        
+        <style>
+            body{
+/*                background-color: #e6f7b8;*/
+            }
+            
+            section{
+                margin: 250px auto;
+            }
+            .paginationB a{
+                color:black
+            }
+            
+        </style>
+        
+        
+        
+        
+    </head>
+    
+    <body>
+      
+        
+<!--
+    <section style="width:100%; background-color: white; height:150vh; margin:0; position: absolute; z-index: 9999999; opacity:.95" id="white">
+        
+        </section>
+-->
+        
+   
+        
+        <section style="margin-top:300px" id="cloud" >
+            <img src="08/08_panel_1.jpg" style="width:400px; margin-left:100px">
+        </section>
+        
+         <section  class="fullsize" id="eyes">
+            <img src="08/08_panel_2.jpg" >
+        </section>
+        
+        <section   class="fade">
+            <img src="08/08_panel_3.jpg">
+        </section>
+        
+        
+         <section  class="fade">
+            <img src="08/08_panel_4.jpg" >
+             <div class="bubbles">
+                <p class="bubble" style="left:400px; top:-400px;">emilia??</p>
+            </div>
+        </section>
+        
+         <section  class="fullsize"  class="fade">
+            <img src="08/08_panel_5.jpg" >
+             <div class="bubbles">
+                <p class="bubble" style="left:400px; top:-450px;">&nbsp;...&nbsp;</p>
+            </div>
+        </section>
+        
+        
+        
+        
+     
+        
+        
+        
+   
+        <section class="paginationB" >
+            <a href="07b.html"> ❮ Back </a>
+            <a href="01c.html">Home</a>
+            <a href="09b.html">Next ❯ </a></section>
+        
+        
+        
+        <script>
+        
+        
+           $(document).ready(function () {
+       
+    
+    var controller = new ScrollMagic.Controller();
+    
+
+var cloud = new TimelineMax();
+                
+                cloud
+//                    .from("#cloud", 2, {opacity:.1})
+               .from("#eyes", 2, {opacity:0})
+               .from(".fade", 2, {opacity:0})
+                    
+               ;
+               
+               
+  
+var scene = new ScrollMagic.Scene({
+    triggerElement: "#cloud",
+    duration: 0,
+    triggerHook: .3
+  })
+    
+.setTween(cloud)
+.reverse(false)
+
+//  .addIndicators({name: "white desk"})
+  .addTo(controller);
+    
+
+
+
+    
+      
+});
+        </script>
+        
+        
+        
+    </body>
+    
+</html>

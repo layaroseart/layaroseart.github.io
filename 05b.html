@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+        <link rel="stylesheet" type="text/css" href="styles.css" /> 
+ 
+		<meta name="description" content="overgrown" />  
+        
+		<title>Overgrown</title>
+         <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600" rel="stylesheet">
+        
+        
+<!--        jquery-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <!--        gsap-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!--        scrollmagic-->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>     
+    <!--        indicators-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+<!--        gsap animation-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
+        
+        
+        <style>
+            body{
+                background-color: #17193B;
+            }
+        </style>
+        
+        
+        
+        
+    </head>
+    
+    <body>
+        
+
+        
+        <div class="choice">
+            
+            <div class="arrows">
+            <a href="06Ab.html" onclick="clickA()"> 
+                <img src="05/arrow_1.png" id="arrow1"></a>
+                
+                <a href="06Bb.html" onclick="clickB()"> <img src="05/arrow_2.png" id="arrow2"></a>
+                
+                <a href="06Cb.html" onclick="clickC()">  <img src="05/arrow_3.png" id="arrow3"></a>
+            
+            </div>
+
+            <div class="bubbles desktopbubbles">
+                <p class="bubble friend"  style="margin-top:40px; margin-left:340px;" >
+                Well, which <br>quest should we<br> do now? </p>
+            </div>
+ 
+            
+            <div class="bubbles mobilebubbles">
+                <p class="bubble friend" style="margin-top:5vh; margin-left:340px;width:200px" >
+                Well, <br>which quest should we do now? </p>
+            </div>
+        </div>
+        
+        
+        
+        <section class="paginationB" style="margin-top:-5px;" >
+        <a href="04b.html"> ⮜ Back </a>
+            <a href="01c.html">Home</a>
+            
+                <span title="read the quests before you can continue!"><a href="07b.html" id="continue" >Next ⮞ </a></span></section>
+        
+        
+        
+
+
+    
+            
+ 
+            <script>
+    
+                 
+function clickA(){
+  sessionStorage.setItem('questA', true);
+//  checkQuests();
+}
+
+function clickB(){
+  sessionStorage.setItem('questB', true);
+//  checkQuests();
+}
+
+function clickC(){
+  sessionStorage.setItem('questC', true);
+//  checkQuests();
+}
+    
+var showContinue = document.getElementById("continue"); 
+                
+//showContinue.style.display = 'none';
+
+function checkQuests(){
+  console.log(sessionStorage);
+  if(sessionStorage.getItem('questA') == 'true' && sessionStorage.getItem('questB') == 'true' && sessionStorage.getItem('questC') == 'true' ) {
+      showContinue.style.display = 'inline-block';
+  }else{
+      showContinue.style.opacity = '.3';
+      showContinue.style.pointerEvents = 'none';
+  }
+}
+                
+if(sessionStorage.getItem('questA') == 'true'){
+    document.getElementById("arrow1").style.opacity = '.6';
+}           else{
+    document.getElementById("arrow1").style.opacity = '1';
+} 
+                
+                if(sessionStorage.getItem('questB') == 'true'){
+    document.getElementById("arrow2").style.opacity = '.6';
+}           else{
+    document.getElementById("arrow2").style.opacity = '1';
+} 
+                if(sessionStorage.getItem('questC') == 'true'){
+    document.getElementById("arrow3").style.opacity = '.6';
+}           else{
+    document.getElementById("arrow3").style.opacity = '1';
+} 
+                
+checkQuests();
+                
+console.log(sessionStorage.getItem('questA')) 
+console.log(sessionStorage.getItem('questB')) 
+console.log(sessionStorage.getItem('questC')) 
+   
+</script>
+        
+        
+        
+    </body>
+    
+</html>

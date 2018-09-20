@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+        <link rel="stylesheet" type="text/css" href="styles.css" /> 
+ 
+		<meta name="description" content="overgrown" />  
+        
+		<title>Overgrown</title>
+         
+        <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600" rel="stylesheet">
+        
+        
+<!--        jquery-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <!--        gsap-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!--        scrollmagic-->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>     
+    <!--        indicators-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+<!--        gsap animation-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
+        
+ 
+        <style>
+        
+        
+/*            .bubble{position:relative}*/
+        </style>
+        
+        
+        
+    </head>
+    
+    <body>
+    
+      
+        <section style="margin-top:200px">
+            
+        <img src="01/01_panel_1.jpg">
+            
+        </section>
+        
+<!--        <section class="desktopbubbles" style="margin-top: 200px"> </section>-->
+        
+        <section class="fullsize" id="bedroom">
+        <img src="01/01_panel_2.jpg">
+        
+        </section>
+        
+        
+        <section style="height:700px; margin-top:-700px">
+            <img src="01/email_1.jpg" class="email e1" style="top:160px; left:530px;">
+        <img src="01/email_2.jpg" class="email e2" style="top:330px; left:180px;">
+            <img src="01/email_1.jpg" class="email e3" style="top:310px; ">
+        <img src="01/email_2.jpg" class="email e4" style="top:370px; left:120px;">
+            <img src="01/email_2.jpg" class="email e5" style="top:390px; left:0px;">
+            
+        </section>
+        
+        
+        <section >
+        <img src="01/01_panel_3.jpg">
+            <div class="bubbles">
+               <img src="01/01_panel_3_bubbles.png" style="position: absolute; top:-500px; left:-65px">
+                <p class="bubble small" style="top:-335px; left:50px;background-color: white">ugh</p>
+                </div>
+        
+        
+        </section>
+         
+        <section class="fullsize">
+        <img src="01/01_panel_4_.jpg">
+            <div class="bubbles">
+                <img src="01/01_panel_4_bubbles.png" style="position: absolute; top:-610px">
+        <p class="bubble" style="top:-500px; left:60px; background-color: white">sigh..</p>
+                </div>
+            <img src="01/01_panel_5a.png" style="margin-top:-80px; position:absolute" class="ring">
+                </section>
+        
+        <section style="margin-top:200px">    
+            <img src="01/01_panel_5_.jpg"></section>
+        
+            
+        <section style="width:500px">    
+            <img src="01/01_panel_6.jpg" ></section>
+            
+            <section>
+            <img src="01/01_panel_7.jpg"></section>
+            
+        <section class="fullsize">
+            <img src="01/01_panel_8.jpg"></section>
+            
+            <section style="margin-bottom:-300px" class="lookout">
+            <img src="01/01_panel_9.png"></section>
+        
+        <div id="trigger">
+    
+           <img src="01/01%20horizontal.jpg" >
+    
+            <div class="mobilebubbles bubbles">
+    <p class="bubble" style="top:-860px; left:850px;min-width: 250px">
+i'm trying <br>to make friends, it doesn't just happen!</p>
+    <p class="bubble" style="top:-770px; left:1200px; min-width: 200px"> it's not like <br>i don't want to..</p>
+    
+    <p class="bubble" style="top:-898px; left:2150px;min-width:250px">...and even if I <i>wanted</i> a boyfriend</p>
+    <p class="bubble" style="top:-830px; left:2450px; min-width:250px ">which I don't, by the way, I'm very aromantic</p>
+    <p class="bubble" style="top:-450px; left:2350px;min-width:250px">I don't have<br> time for that! I barely have time for friends!</p>
+    <p class="bubble" style="top:-500px; left:2900px;">I'm so busy, everything's happening at once,</p>
+    <p class="bubble small" style="top:-950px; left:3100px; min-width:340px; padding:25px 20px;">I can't think<br>about the future I'm literally trying to get through classes and working <br>and..</p>
+    <p class="bubble" style="top:-600px; left:3450px; width:120px">Wait a second...</p>
+                </div>
+            
+            
+            <div class="desktopbubbles bubbles">
+    <p class="bubble" style="top:-630px; left:650px;">
+i'm tryING to make friends, it doesn't just happen!</p>
+    <p class="bubble" style="top:-550px; left:850px;"> it's not like i don't want to..</p>
+    
+    <p class="bubble" style="top:-650px; left:1500px;min-width:140px">...and even if <br>I <i>wanted</i> a boyfriend</p>
+    <p class="bubble small" style="top:-580px; left:1700px;min-width:160px ">which I don't, by<br> the way, I'm very aromantic</p>
+    <p class="bubble" style="top:-430px; left:1600px; min-width:180px">I don't have time for that! I barely have time for friends!</p>
+    <p class="bubble" style="top:-340px; left:2000px;">I'm so busy, everything's happening at once,</p>
+    <p class="bubble small" style="top:-620px; left:2200px; min-width:240px">I can't think about the future I'm literally trying to get through classes and working and..</p>
+    <p class="bubble" style="top:-450px; left:2400px; width:120px">Wait a second...</p>
+                
+                
+                </div>
+            
+            <div style="position: absolute; width:300px">
+                    
+                 <div class="paginationB desktopbubbles" style="bottom: 180px; left:2700px; position: absolute">
+                    <a href="02b.html">Next ⮞ </a></div>
+                    
+                    <div class="paginationB mobilebubbles" style="bottom: 00px; left:3700px; position: absolute ">
+                    <a href="02b.html">Next ⮞ </a></div>
+                
+                </div>
+            
+            
+            
+             </div>
+     
+        
+       
+    
+        
+        
+                     <script>
+                         
+                       
+                         
+           $(document).ready(function () {
+               
+                      
+var control = new ScrollMagic.Controller();
+               
+             var notifs = new TimelineMax();
+            
+                
+                notifs.from(".e1", .3, {opacity:'0', y:'40px',ease: Expo.easeOut,width:'100px', marginLeft:'200px'})
+               
+                .from(".e2", .3, {opacity:'0', y:'40px',ease: Expo.easeOut,width:'100px', marginLeft:'200px'},"+=.3")
+               .from(".e3", .3, {opacity:'0', y:'40px',ease: Expo.easeOut,width:'100px', marginLeft:'200px'},"+=.3")
+                .from(".e4", .3, {opacity:'0', y:'40px',ease: Expo.easeOut,width:'100px', marginLeft:'200px'},"+=.2")
+               .from(".e5", .3, {opacity:'0', y:'40px',ease: Expo.easeOut,width:'100px', marginLeft:'200px'},"+=.2")
+              ;
+               
+ //,"+=.2" adds pause before item
+              
+    
+         new ScrollMagic.Scene({
+        triggerElement: "#bedroom", triggerHook: .3,
+    })
+        
+        .setTween(notifs)
+            .reverse(false)
+//        .addIndicators({name: "notifs", })
+          .addTo(control);
+               
+     //ring  
+    var ring = new TimelineMax();
+                
+                ring.from(".ring", 1, {width:"300px", opacity:0, left:"300px", ease: Elastic.easeOut},)
+               .from(".ring", .4, {x:"+=30", yoyo:true, repeat:7,  ease: Elastic.easeOut}, 0)
+               .to(".ring", .1, {x:"-=30", ease: Elastic.easeOut})
+    
+   
+              ;
+               
+               
+            new ScrollMagic.Scene({
+        triggerElement: ".ring", duration: 0, triggerHook: .6, })
+        .setTween(ring)
+          .addTo(control);    
+               
+    
+    var controller = new ScrollMagic.Controller();
+    
+
+  
+    //PHONE
+    
+if ( $(window).width() > 1090) {      
+  //Add your javascript for large screens here 
+  var walk = new TimelineMax();
+                
+                walk.to("body", .01, {backgroundColor: '#182045'}, "+=.20")
+    .from(".pagination", .1, {opacity:0})
+                    .to("#trigger", 1,  {left:-1900}, 0)
+    .to(".lookout",.02, {opacity:0}, 0)
+   
+              ;
+ 
+              
+    
+         new ScrollMagic.Scene({
+        triggerElement: "#trigger", duration: 2000, triggerHook: 0,
+    })
+        
+        .setTween(walk)
+        .setPin("#trigger")
+//        .addIndicators({ name: "walk", })
+         .addTo(controller);
+        
+//    new ScrollMagic.Scene({
+//        triggerElement: "#trigger", duration: 0, triggerHook: 0,
+//    })
+//        .setPin("#trigger")
+////        .addIndicators({ name: "walk",  })
+//        .addTo(controller);
+    
+    
+  
+  
+} 
+
+else {
+    
+    var walk = new TimelineMax();
+                
+                walk
+                .to("body", .01, {backgroundColor: '#182045'}, "+=.20")
+        .from(".pagination", .1, {opacity:0})
+                    .to("#trigger", 1,  {left:-4000 }, 0)
+    .to(".lookout",.02, {opacity:0}, 0)
+   ;
+    
+              
+    
+         new ScrollMagic.Scene({
+        triggerElement: "#trigger", duration: 2000, triggerHook: .1,
+    })
+        .setTween(walk)
+        .setPin("#trigger")  
+//        .addIndicators({ name: "walk",  })         
+        .addTo(controller);
+    
+}
+    
+      sessionStorage.setItem('questA', false);
+  sessionStorage.setItem('questB', false);
+  sessionStorage.setItem('questC', false);
+//  console.log(sessionStorage);
+   
+               
+    
+        });
+                         
+            
+                
+            </script>
+    
+    </body>
+    
+    </html>
