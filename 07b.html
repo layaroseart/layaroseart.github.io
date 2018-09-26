@@ -49,7 +49,7 @@
         </section>
         
         
-        <section class="fullsize">
+        <section class="fullsize" style="height:1800px">
             <img src="07/07_panel_1.jpg">
             
             <div class="bubbles">
@@ -175,11 +175,10 @@
                 </div>
         </section>
         
-        <section class="fullsize" style="background-image: url(07/07_panel_19b.jpg); background-size: contain; margin-bottom-300px" id="run">
+        <section class="fullsize" style="background-image: url(07/07_panel_19b.jpg); background-size: contain; margin-bottom-600px" id="run">
             <img src="07/07_panel_19.jpg" class="run">
         </section>
-        <br><br><br><br>
-        <br><br><br><br><br><br><br><br>
+       
         
         
         
@@ -236,6 +235,7 @@ var run = new TimelineMax();
                 run.to(".run", .2, {opacity:0,})
                .to("body", .2, {backgroundColor:"#fff"})
                .to("#run", .2, {opacity:0,})
+//               .to(".paginationB", .2, {position:"fixed"}, .5 )
                
                ;
                

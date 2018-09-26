@@ -22,10 +22,50 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
         
         
+<!--        parallaxer-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+        
+        
         <style>
             body{
                 background-color: #17193B;
+/*                height:100vh;*/
+/*                width: 100vh;*/
             }
+            
+            @media only screen and (max-width:1080px) {
+                
+                body{
+/*                    width:100vh;*/
+                    height:100vh;
+                    align-content: center;
+                    overflow-x: hidden;
+                    
+                    
+                }
+                .paginationB{
+                    position: fixed;
+                }
+            }
+            
+            /*IPAD*/
+/*
+@media only screen and (min-aspect-ratio: 15/20) and (orientation:portrait){
+    .mobilebubbles{
+        top:100px
+    }
+    #choice div{
+        height:100vh;
+    }
+     #choice div img{
+        height:100%;
+
+        left:-18%;
+ 
+    }
+
+}
+*/
         </style>
         
         
@@ -35,39 +75,54 @@
     
     <body>
         
-
         
-        <div class="choice">
-            
-            <div class="arrows">
-            <a href="06Ab.html" onclick="clickA()"> 
-                <img src="05/arrow_1.png" id="arrow1"></a>
-                
-                <a href="06Bb.html" onclick="clickB()"> <img src="05/arrow_2.png" id="arrow2"></a>
-                
-                <a href="06Cb.html" onclick="clickC()">  <img src="05/arrow_3.png" id="arrow3"></a>
-            
-            </div>
+     
+        <div id="choice">
+        
 
-            <div class="bubbles desktopbubbles">
-                <p class="bubble friend"  style="margin-top:40px; margin-left:340px;" >
+<!--        <div data-depth="0.2"><img src="05/05_panel_1.jpg"></div>-->
+    
+           <div data-depth="0.1"><img src="05/05_panel_1a.png"></div> 
+    
+            <div data-depth="0.2" >
+    
+                <div class="arrows">
+                    <a href="06Ab.html" onclick="clickA()"> 
+                        <img src="05/arrow_1.png" id="arrow1"></a>
+                    <a href="06Bb.html" onclick="clickB()"> <img src="05/arrow_2.png" id="arrow2"></a>
+                    <a href="06Cb.html" onclick="clickC()">  <img src="05/arrow_3.png" id="arrow3"></a>
+
+                </div>
+            </div>
+            
+            
+            <div data-depth="0.3"><img src="05/05_panel_1b.png">
+                <div class="bubbles desktopbubbles" style="height:0">
+                <p class="bubble friend"  style="margin-top:-400px; margin-left:340px; " >
                 Well, which <br>quest should we<br> do now? </p>
-            </div>
- 
-            
-            <div class="bubbles mobilebubbles">
-                <p class="bubble friend" style="margin-top:5vh; margin-left:340px;width:200px" >
+                </div>
+                <div class="bubbles mobilebubbles" style="height:0">
+                <p class="bubble friend" style="margin-top:-45vh; margin-left:40vh; width:200px; position: absolute;" >
                 Well, <br>which quest should we do now? </p>
+                </div>
             </div>
-        </div>
-        
-        
-        
-        <section class="paginationB" style="margin-top:-5px;" >
-        <a href="04b.html"> ⮜ Back </a>
-            <a href="01c.html">Home</a>
             
-                <span title="read the quests before you can continue!"><a href="07b.html" id="continue" >Next ⮞ </a></span></section>
+    
+            <div data-depth="0.5" >   <img src="05/05_panel_1c.png">
+            </div>
+        
+        </div>
+                 
+        
+            
+           
+        
+        
+        <section class="paginationB" style="margin-top:-5px;"  >
+            <a href="04b.html" > ❮  Back </a>
+            <a href="01c.html">Home</a>
+            <span title="read the quests before you can continue!"><a href="07b.html" id="continue"  >Next ❯ </a></span>
+        </section>
         
         
         
@@ -77,6 +132,10 @@
             
  
             <script>
+                
+                
+var choice = document.getElementById('choice');
+var parallaxInstance = new Parallax(choice);
     
                  
 function clickA(){
@@ -95,15 +154,18 @@ function clickC(){
 }
     
 var showContinue = document.getElementById("continue"); 
+//var showBubbles = document.getElementsByClassName("bubbles");
                 
 //showContinue.style.display = 'none';
 
 function checkQuests(){
   console.log(sessionStorage);
   if(sessionStorage.getItem('questA') == 'true' && sessionStorage.getItem('questB') == 'true' && sessionStorage.getItem('questC') == 'true' ) {
-      showContinue.style.display = 'inline-block';
+      showContinue.style.display = 'inline-block'
+//      showBubbles.style.opacity = '0';
   }else{
       showContinue.style.opacity = '.3';
+//      showBubbles.style.opacity = '1';
       showContinue.style.pointerEvents = 'none';
   }
 }
