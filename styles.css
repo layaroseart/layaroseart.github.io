@@ -5,6 +5,7 @@ body {
     margin:0;
      padding:0;
     font-family:  'Dosis', Tahoma, sans-serif;
+    color: white;
 }
           
 
@@ -18,7 +19,15 @@ body{
 }
 
 
- h1{
+#particles-js{
+    position: fixed; 
+    width:100%;
+    height:100%;
+    top:0;
+    
+}
+
+ h1 {
                 font-family: Garamond, serif;
                 font-size: 5em;
                 letter-spacing: 10px;
@@ -28,14 +37,41 @@ body{
                 margin-top:47vh;
             }
             .about,.about a{
-                font-family: garamond;
+                font-family: garamond;:
                 text-align: center;
                 color:white;
                 text-decoration: none;
                 opacity:.8;
                 
             }
-            
+a{
+                color: white;
+                text-decoration: none;
+            }
+a:hover{
+    opacity: .7;
+}
+
+ul{
+    width:80%;
+    margin: 20px auto 0;
+    padding:0px;
+    z-index: 99999;
+/*    font-size: 3em;*/
+    text-align: center;
+    
+    
+}
+
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+ 
+    
+}
+
+
 
 /*
 
@@ -198,7 +234,7 @@ iframe{
     font-size: 2em;
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
+/*    color: white;*/
     padding:5px;
     margin: 0 30px;
 /*    margin: auto;*/
@@ -216,20 +252,6 @@ iframe{
 
 
 
-/*
-            .normal{
-                width:100%;
-            }
-            
- 
-*/
-/*
-            
-            .horiz{
-                float:left;
-                height:700px;
-            }
-*/
             
             #space{
                 height:800px;
@@ -249,6 +271,7 @@ iframe{
                 position: absolute;
                 float:left;
                 background-size: cover;
+    color:black;
 
                 font-weight: 500;
                 line-height: 1.2;
@@ -295,31 +318,49 @@ iframe{
             nav{
                 position: fixed;
 /*                background-color: white;*/
-                border-radius: 10%;
-                left:-10px
+/*                border-radius: 10%;*/
+                right:0px;
+                top:0;
+                z-index: 9999;
+                display: none;
             }
             nav ul{
                 list-style-type: none;
-                margin:10px;
-                padding:5px;
+                display: block;
+                margin:70px 10px 0 0;
+                padding:0px;
+                width:100px;
                 
             }
-            nav ul li{
-                padding: 0 0 0 10px; 
-                margin:10;
-                line-height: 2;
-                
-            }
+
             nav ul li a{
                 text-decoration: none;
-                text-transform: uppercase;
-                color: #db8ac2;
                 font-size: 25px;
+                line-height: 2;
             }
- 
-nav:hover{
-    left:-10px;
+
+.nav {
+    position: fixed;
+    color: white;
+    padding: 16px;
+/*    border-radius: 50%;*/
+/*    margin:10px;*/
+    right:15px;
+    top:0;
+    z-index: 9999;
+    opacity: .2;
+    font-size: 3em;
 }
+
+.nav:hover, .nav:focus {
+    
+    opacity: 1;
+}
+.navshow{
+    display: block;
+}
+ 
+
 .mobilebubbles{
     display: none;
     
@@ -386,24 +427,16 @@ nav:hover{
     
 
             
-/*
+ 
             
-#fey{
-margin-top:-1000px;
-    position: absolute;
-    z-index: 9;
-
-            }
-            
-*/
-/*
  #bottom02 { 
-     top: -800px;
+/*     top: -800px;*/
      margin-bottom: -1200px;
+/*
      width:1000px;
      z-index: 99999;
-}
 */
+}
 
 
 /*PAGE 6A*/
@@ -492,7 +525,73 @@ stroke: #4aad87;
 /*        width: 800px;*/
     }
     
-   #choice{
+  
+    
+    #bottom02{
+/*        width:800px;*/
+        margin-bottom: -800px;
+    }
+    .pagination a, .paginationB a {
+        font-size: 3.5em;
+    }
+    
+    ul li a{
+        font-size: 3em;
+    }
+    
+    #trigger
+            {
+                height:1150px;
+                width:4794px;
+                margin-left:0;
+                
+
+                
+            }
+            
+            #trigger img{
+                height:1150px;
+    
+            }
+    
+    .walktrees, .walktrees2{
+/*    top:-1155px; */
+    left:2000px
+}
+    
+    .nav{
+        margin: 20px;
+            font-size: 5em
+    }
+    
+    nav ul{
+        margin:120px 50px;
+                padding:80p;
+                width:150px;
+        
+    }
+    
+    nav ul li a{
+        font-size: 3.5em;
+        
+
+  
+}
+    
+    h1{
+        font-size: 7em;
+    }
+    
+    h2{
+        font-size: 3.5em;
+    }
+    p{
+        font-size: 2.5em
+    }
+}
+    
+@media only screen and (max-width:1020px) {
+     #choice{
 /*        width:1000px;*/
         height:85vh;
 /*        overflow: hidden;*/
@@ -528,44 +627,34 @@ stroke: #4aad87;
 #choice .arrows img{
     width:220px;
     margin: inherit;
-}
-    
-    #bottom02{
-        width:800px;
-    }
-    .pagination a, .paginationB a {
-        font-size: 3.5em;
     }
     
-    #trigger
-            {
-                height:1150px;
-                width:4794px;
-                margin-left:0;
-                
-
-                
-            }
-            
-            #trigger img{
-                height:1150px;
-    
-            }
-    
-    .walktrees, .walktrees2{
-/*    top:-1155px; */
-    left:2000px
+ 
+/*
+    .mobilebubbles p{
+        font-size: 30px;
+        max-width:250px;
+    }
+*/
+/*
+    .desktopbubbles{
+    display: none;
 }
-    
-   
-    
-    nav ul li a{
-        font-size: 40px;
+*/
 
-  
 }
-    
-
-   
+   @media only screen and (max-width:1080px) and (max-height:1420px) and (min-width:700px)
+       
+   {
+       #choice div .bubbles{
+           margin-left:-20vw;
+           margin-top:16vh;
+       }
+       #choice div .bubbles .bubble{
+/*           font-size: 1.7em;*/
+       }
+       
+       
+}
 
 

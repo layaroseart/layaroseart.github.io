@@ -34,6 +34,16 @@
     </head>
     
     <body>
+        
+        <a onclick="navButton()" class="nav">?</a>
+        <nav id="nav" class="nav-content">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li> 
+                <a href="02b.html">❯ </a></li>
+            </ul>
+         </nav>
     
       
         <section style="margin-top:200px; height:540px">
@@ -150,7 +160,7 @@
             
             <div style="position: absolute; width:300px">
                     
-                 <div class="paginationB desktopbubbles" style="bottom: 100px; left:2700px; position: absolute">
+                 <div class="paginationB desktopbubbles" style="bottom: 10vh; left:2700px; position: absolute">
                     <a href="02b.html">Next ❯ </a></div>
                     
                     <div class="paginationB mobilebubbles" style="bottom: 00px; left:3700px; position: absolute ">
@@ -296,6 +306,29 @@ else {
             
                 
             </script>
+        
+        <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function navButton() {
+    document.getElementById("nav").classList.toggle("navshow");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.nav')) {
+
+    var dropdowns = document.getElementsByClassName("nav-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('navshow')) {
+        openDropdown.classList.remove('navshow');
+      }
+    }
+  }
+}
+</script>
     
     </body>
     

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+        <link rel="stylesheet" type="text/css" href="styles.css" /> 
+ 
+		<meta name="description" content="overgrown" />  
+        
+		<title>Overgrown</title>
+         
+        <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600" rel="stylesheet">
+        
+        
+<!--        jquery-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <!--        gsap-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!--        scrollmagic-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>     
+    <!--        indicators-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+<!--        gsap animation-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
+        
+<!-- particles-->
+        <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        
+        <style>
+        
+         body {
+
+  background-color:#383c5f;
+            
+/*             background-size: cover;*/
+/*             background-position: bottom;*/
+/*             height:100vh;*/
+             color:#cbf0dc;
+             
+             
+
+}
+            
+            
+            
+            p{
+                font-family: dosis;
+                letter-spacing: .3px;
+                line-height: 1.6;
+            }
+            
+            h2{
+                color: white;
+            }
+            
+            section{
+                margin: 100px auto;
+                width:600px
+            }
+            
+            h1{
+                padding-top:100px;
+                margin:0;
+            }
+            
+@media only screen and (max-width:1080px) {
+        body{
+        background-position: center;
+            
+                }
+    
+    section{
+        width:80%
+    }
+                
+                
+            }
+           
+            
+        </style>
+        
+        
+        
+    </head>
+   
+    <body>
+        
+        
+        <div id="particles-js" ></div>
+
+        
+        <h1> about</h1>
+        
+        <section style="margin:0 auto;"><ul>
+            <li><a href="index.html">HOME </a> </li> 
+            <li><a href="01c.html">START READING </a></li>
+            <li><a href="overgrowncomic.tumblr.com">BLOG</a></li>
+        </ul>
+            </section>
+           
+        
+        <section>
+            <h2>THE STORY</h2>
+            <p><i>Overgrown</i> is a short comic about a girl who goes for a walk in the forest and gets trapped in a faery realm.
+She has to complete three quests to gain her freedom (but that’s if she even wants to go back to her normal life...)
+</p>
+        
+        </section>
+        
+        <section>
+            <h2>THE ARTIST</h2>
+            <p>Hi! I'm Laya Rose, an illustrator and designer from NZ. </p>
+            
+            <p>I work in a variety of mediums, and especially love combining digital and traditional art. I love nature, magic, and pretty things.</p>
+            
+            <p>I also have another comic (also about girls and faeries and forests) called <i>Mistlands</i>, that I started a few years ago to figure out how webcomics work. It's a work in progress.</p>
+            
+            <p>
+                You can find me at:<br>
+                
+                <a href="https://twitter.com/layahimalaya">@layahimalaya</a><br>
+            <a href="layaroseart.com">layaroseart.com</a>
+              
+            
+                
+
+</p>
+        
+        </section>
+        
+        <section>
+            <h2>THE PROJECT</h2>
+            <p>I made <i>Overgrown</i> as part of my honors year major project at Massey University. My research looked into how storytelling in webcomics can be enhanced with interactivity and multimodality. I looked into various hypercomics (sometimes used to refer to webcomics made specifically for the web, unable to to be replicated in print). </p>
+
+            <p>Obviously, with comics hosting sites like tapas and webtoon becoming more common than self hosting, the main type of hypercomic these days is the vertical scroll format, gifs, and sometimes sound. Anything more complex than that is often not feasible for long running comics. But there are so many amazing possibilities to explore, especially for shorter comics!</p>
+
+            <p>And it’s super doable, too! I had basic html/css skills at the start of this year, but I had pretty much no javascript knowledge (I... still have a very small amount of javascript knowledge). Things like scrollmagic and GSAP have a bit of a learning curve - but once you get the basics, it’s surprisingly easy!
+            </p>
+        
+        </section>
+        
+        <section>
+            <h2>HOW DID I MAKE IT?</h2>
+            <p>I used <a href="http://scrollmagic.io/">Scrollmagic</a>,  <a href="https://greensock.com/">GSAP</a>, <a href="http://matthew.wagerfield.com/parallax/">parallax.js</a>, <a href="https://vincentgarreau.com/particles.js/">particles.js</a>
+Everything else was coded myself (with help from constant googling things, of course)
+</p>
+        
+        </section> 
+        
+        <section>
+            <h2>THANKS</h2>
+            <p>[check with people here]
+</p>
+        
+        </section>
+        
+        
+        <script type="text/javascript">
+particlesJS.load('particles-js', 'particlesjs-config.json', function() {
+  console.log('callback - particlejs-config.js config loaded');
+});
+</script>
+    
+    </body>
+</html>

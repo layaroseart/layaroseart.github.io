@@ -57,6 +57,16 @@
     </head>
     
     <body>
+        
+        <a onclick="navButton()" class="nav">?</a>
+        <nav id="nav" class="nav-content">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="03b.html"> ❮ </a> &nbsp;  &nbsp;&nbsp;&nbsp;
+                <a href="05b.html">❯ </a></li>
+            </ul>
+         </nav>
 
         
         <section class="double" style="margin-top:200px; height:850px">
@@ -296,6 +306,29 @@
         });
         
         </script>
+        
+        <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function navButton() {
+    document.getElementById("nav").classList.toggle("navshow");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.nav')) {
+
+    var dropdowns = document.getElementsByClassName("nav-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('navshow')) {
+        openDropdown.classList.remove('navshow');
+      }
+    }
+  }
+}
+</script>
     
     </body>
     

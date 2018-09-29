@@ -75,6 +75,16 @@
     
     <body>
         
+        <a onclick="navButton()" class="nav">?</a>
+        <nav id="nav" class="nav-content">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="04b.html"> ❮ </a> &nbsp;  &nbsp;&nbsp;&nbsp;
+                <a href="07b.html" id="continue"  > ❯ </a></li>
+            </ul>
+         </nav>
+        
         
      
         <div id="choice">
@@ -105,12 +115,12 @@
                 <div class="bubbles mobilebubbles" style="height:0">
                 <p class="bubble " style="margin-top:-45vh; margin-left:40vh; width:200px; position: absolute; background-color: white " >
                 Well, <br>which quest should we do now? </p>
-                    <img src="05/05_bubble.png" style="position: absolute; height:230px; width:300px; margin-top:-46vh; margin-left:39vh">
+                    <img src="05/05_bubble.png" style="position: absolute; height:250px; width:310px; margin-top:-46vh; margin-left:38vh">
                 </div>
             </div>
             
     
-            <div data-depth="0.5" >   <img src="05/05_panel_1c.png">
+            <div data-depth="0.4" >   <img src="05/05_panel_1c.png">
             </div>
         
         </div>
@@ -196,7 +206,28 @@ console.log(sessionStorage.getItem('questB'))
 console.log(sessionStorage.getItem('questC')) 
    
 </script>
-        
+        <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function navButton() {
+    document.getElementById("nav").classList.toggle("navshow");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.nav')) {
+
+    var dropdowns = document.getElementsByClassName("nav-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('navshow')) {
+        openDropdown.classList.remove('navshow');
+      }
+    }
+  }
+}
+</script>
         
         
     </body>
