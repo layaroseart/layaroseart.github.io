@@ -36,15 +36,23 @@
     
     <body>
         
-   
+   <a onclick="navButton()" class="nav">?</a>
+        <nav id="nav" class="nav-content">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li>
+                <a href="05b.html">❯ </a></li>
+            </ul>
+         </nav>
        
         
         
-        <section class="fullsize" style="height:810px">
+        <section class="fullsize " style="height:810px">
             <img src="06weeds/06b_panel_1.jpg">
             
             <div class="bubbles">
-                 <p class="bubble friend" style="top:-589px; left:200px; ;">Come on, it's this way!</p>
+                 <p class="bubble friend" style="top:-529px; left:300px; width:180px ;">Come on, it's this way!</p>
                 
             </div>
         </section>
@@ -59,7 +67,7 @@
         </section>
         
          <section >
-            <img src="06weeds/06b_panel_3.png" style="margin-bottom:-80px; z-index: 9999999">
+            <img src="06weeds/06b_panel_3.png" style="margin-bottom:-80px; z-index: 9999999; height:990px">
              
             <div class="bubbles">
                 <p class="bubble friend" style="top:-930px; left:300px; max-width:250px;">The 'courtyard'<br> is among some ruins..</p>
@@ -105,12 +113,12 @@
         </section>
         
         
-        <section style="width:600px;margin: 150px auto 100px;">
+        <section style="width:600px;margin: 190px auto 160px;">
             <img src="06weeds/06b_panel_9.jpg" >
             
             <div class="bubbles">
-                 <p class="bubble friend" style="top:-500px; left:450px;">Hey, look!</p>
-                <p class="bubble friend" style="top:-430px; left:140px; max-width:250px;">There are little orchids and things in here...</p>
+                 <p class="bubble friend" style="top:-550px; left:450px;">Hey, look!</p>
+                <p class="bubble friend" style="top:-450px; left:170px; max-width:250px;">There are little orchids and things in here...</p>
                 
             </div>
         </section>
@@ -118,12 +126,12 @@
         <section >
             <img src="06weeds/06b_panel_10.jpg">
             <div class="bubbles">
-                 <p class="bubble friend" style="top:-470px; left:20px; max-width:280px">We probably<br> just need to remove these big weeds smothering them,</p>
+                 <p class="bubble friend" style="top:-490px; left:20px; max-width:280px">We probably<br> just need to remove these big weeds smothering them,</p>
                 <p class="bubble small friend" style="top:-280px; left:260px; ">but, delicately, somehow...</p>
                 
             </div>
         </section>
-        <br><br><br><br>
+        <br><br>
         
         <section style="width:600px; margin: 80px auto; ">
             <img src="06weeds/06b_panel_11.jpg" >
@@ -155,7 +163,7 @@
   
         
         
-        <section>
+        <section >
             <img src="06weeds/06b_panel_12.png">
             
             <div class="bubbles">
@@ -173,15 +181,23 @@
             <img src="06weeds/06b_panel_13.jpg">
         </section>
         
-        <section class="fullsize">
-            <img src="06weeds/06b_panel_14.jpg">
+        <section class="fullsize" style="height:345px" id="cut">
+            <img src="06weeds/06b_panel_14.png" style="position: absolute; width:1600px; margin: 0 -30%" class="cut1">
+            <img src="06weeds/06b_panel_14a.png" style="position: relative; width:1600px; margin: 0 -30%" class="cut2">
+            <img src="06weeds/06b_panel_14c.png" style="position: relative; width:1600px; margin: -345px -30% 0" class="cut3">
         </section>
          
-        <section>
+        <section style="margin-top:-10px">
             <img src="06weeds/06b_panel_15.jpg">
+            <div class="bubbles">
+                 <p class="bubble" style="top:-250px; left:330px; max-width:280px">oh, sweet!</p>
+            </div>
         </section>
         
-        <section class="fullsize" id="cleaning" style="background-image: url(06weeds/06b_panel_16.jpg); height:696px; background-size: contain; overflow: hidden; margin-top:100px">
+        <section style="height:70px" class="desktopbubbles">
+        </section>
+        
+        <section class="fullsize big" id="cleaning" style="background-image: url(06weeds/06b_panel_16.jpg); height:696px; background-size: contain; overflow: hidden; margin-top:100px">
             
             <img src="06weeds/06b_panel_16.jpg" style="position: absolute; display: block; opacity: 0; z-index: 99999" class="weedtop">
             
@@ -200,12 +216,17 @@
             
 <!--            onmouseover="this.className='weedhover'"-->
             
+            
+            
         </section>
         
         <div style="margin-top:-200px;margin-bottom:250px" id="cleaningafter"></div>
         
+        <section class="desktopbubbles" style="height:150px">
+            </section>
         
-        <section style="background-image: url(06weeds/06b_panel_17.jpg); background-size: contain" id="faery">
+        
+        <section style="background-image: url(06weeds/06b_panel_17.jpg); background-size: contain; height:456px" id="faery">
             <img src="06weeds/06b_panel_17a.jpg" class="faery">
             
             <div class="bubbles">
@@ -217,32 +238,33 @@
             
         </section>
         
-        <section style="width:600px">
+        <section style="width:600px; transform: rotate(-5deg); margin: 50px auto ">
             <img src="06weeds/06b_panel_18.jpg">
         </section>
         
        
-        <section style="background-image: url(06weeds/06b_panel_19b.jpg); background-size: contain;" id="bye">
+        <section style="background-image: url(06weeds/06b_panel_19b.jpg); background-size: contain; height:456px" id="bye">
             <img src="06weeds/06b_panel_19.jpg" class="bye">
             <div class="bubbles">
-                 <p class="bubble fey bye1" style="top:-470px; left:100px; max-width:280px">very good!</p>
+                 <p class="bubble fey bye1" style="top:-470px; left:100px; max-width:280px">ahhh, finally!</p>
                 <p class="bubble fey bye2" style="top:-380px; left:500px; ">my flowers can grow now!</p>
                 </div>
         </section>
         
         
         <section>
-            <img src="06weeds/06b_panel_21.jpg" style="width:500px; margin: 100px 150px  ;">
+            <img src="06weeds/06b_panel_21.jpg" style="width:500px; margin: 100px 150px 150px  ;">
             <div class="bubbles">
-                 <p class="bubble " style="top:-300px; left:600px; max-width:150px;">where'd<br> it go..?</p>
-                <p class="bubble friend" style="top:-120px; left:300px; ">dunno..</p>
+                <p class="bubble " style="top:-490px; left:350px; max-width:150px;">what?! where-</p>
+                 <p class="bubble " style="top:-340px; left:600px; max-width:150px;">where'd<br> it go..?</p>
+                <p class="bubble friend" style="top:-170px; left:250px; ">dunno..</p>
                 </div>
         </section>
         
         <section>
             <img src="06weeds/06b_panel_22.jpg" style="width:500px; margin: 0 150px;">
             <div class="bubbles">
-                 <p class="bubble " style="top:-330px; left:560px; max-width:250px;">i guess we just keep going, then..?</p>
+                 <p class="bubble friend " style="top:-380px; left:360px; width:200px;">seems like we're done, though?</p>
                 
                 </div>
         </section>
@@ -277,6 +299,16 @@
                     .from(".weedy2", 2, {opacity:0,},"+9")
                ;
                
+               
+ var cut = new TimelineMax();
+                
+                cut.from(".cut2", 1, {opacity:0,})
+               .to(".cut1", .3, {opacity:0,}, 0)
+               .from(".cut3", .1, {opacity:0,})
+               .to(".cut2", .1, {opacity:0,}, 1)
+               
+               ;
+               
     var faery = new TimelineMax();
                faery.from(".faery", .05, {opacity:0})
                .to(".faery1", .05, {opacity:0})
@@ -291,6 +323,7 @@
                ;
                
                
+               
     var cleaning = new TimelineMax();
                cleaning.from(".weedtop", .1, {display: "none"})
                    .to(".weedtop", 2, {opacity:1})
@@ -300,19 +333,25 @@
     $(".weed").on("mouseenter", function () {
   $(this).addClass('weedhover');
 });
-      
+       //cut
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#cut", duration: 200, triggerHook: .5})
+.setTween(cut)
+//  .addIndicators({name: "weedy1"}
+  .addTo(controller);
                
 if ( $(window).width() > 1090) {  
     
     //weedy
     var scene = new ScrollMagic.Scene({
-    triggerElement: "#weedy1",duration: 1050, triggerHook: 0})
+    triggerElement: "#weedy1",duration: 1150, triggerHook: 0})
 .setTween(weedy.delay(2))
 //  .setTween(weedy)
 .setPin('#weedy', {pushFollowers: false})
 //  .addIndicators({name: "weedy1"}
   .addTo(controller);
     
+
     
     
      //cleaning
@@ -408,6 +447,29 @@ var scene = new ScrollMagic.Scene({
            
         
         </script>
+        
+           <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function navButton() {
+    document.getElementById("nav").classList.toggle("navshow");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.nav')) {
+
+    var dropdowns = document.getElementsByClassName("nav-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('navshow')) {
+        openDropdown.classList.remove('navshow');
+      }
+    }
+  }
+}
+</script>
         
         
     </body>

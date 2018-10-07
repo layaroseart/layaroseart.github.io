@@ -54,14 +54,17 @@
             <img src="02/02_panel_01.jpg" >
             <img src="02/02_eye_a.png" class="eye" style="margin-top:-585px; margin-left:142px" width="200px">
             <img src="02/02_eye_b.png" class="eye" style="margin-top:-599px; margin-left:641px" width="260px">
-            <img src="02/02_eye_c.png" class="eye" style="margin-top:-245px; margin-left:560px" >
+            <img src="02/02_eye_c.png" class="eye eye2" style="margin-top:-245px; margin-left:560px" >
         </section>
         
         <section class="desktopbubbles"><br></section>
         <br><br>
         
-        <section>
-            <img src="02/02_panel_02.png">
+        <section style="height: 450px; background-image: url(02/02_panel_02.png); background-size: contain;">
+<!--            <img src="02/02_panel_02.png">-->
+            <img src="02/02_eye_2a.png" class="eye" style="margin: 150px 0 0 85px; width:160px">
+            <img src="02/02_eye_2b.png" class="eye" style="margin: 150px 0 0 25px; width:160px">
+            <img src="02/02_eye_2c.png" class="eye" style="margin: 20px 0 0 130px; width:190px">
         </section>
         
         <br><br>
@@ -74,9 +77,14 @@
       
         
         <section style="height: 1200px; background-image: url(02/02_panel_05.jpg); background-size: contain; margin-top:-50px"  >
-           
-            <p class="bubble" style="margin:80px 0 150px 230px;">
+            
+           <div class="bubbles" style="height:300px">
+<!--
+                <p class="bubble" style="margin:80px 0 150px 230px;">
                      is my phone...?</p>
+-->
+            </div>
+            
             <img src="02/02_fey.png" id="fey" style="margin-top:500px
         position: relative;">
             
@@ -86,16 +94,15 @@
 
         width:1000px;" >
             
-<!--            position:ab-->
+
             <img src="02/02_panel_06.png" style="position:absolute;" class="desktopbubbles" >
             
             <img src="02/02_panel_06.png"  class="mobilebubbles">
-            
-<!--            margin-top:480-->
-            <p class="bubble desktopbubbles" width="50px" style="margin-top:100px; margin-left:400px;" >
+
+            <p class="bubble desktopbubbles" width="50px" style="margin-top:95px; margin-left:400px;" >
                 ...nope</p>
             
-            <p class="bubble mobilebubbles" width="50px" style="margin-top:-480px; margin-left:400px;"  >
+            <p class="bubble mobilebubbles" width="50px" style="margin-top:-710px; margin-left:400px;"  >
                 ...nope</p>
 
         </section>
@@ -136,7 +143,12 @@
     //PHONE
     
 
-    
+//      var eye = new TimelineMax();
+//                
+//                eye.from(".eye2", .1, {opacity:0, yoyo: true, repeat: 5}, "+=.5")
+//               .to(".eye2", .1, {opacity:1})
+//    ;
+               
      var phone = new TimelineMax();
                 
                 phone.from(".glitch02", .1, {opacity:0,})

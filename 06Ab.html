@@ -34,10 +34,19 @@
     </head>
     
     <body>
-
+        
+         <a onclick="navButton()" class="nav">?</a>
+        <nav id="nav" class="nav-content">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li>
+                <a href="05b.html">❯ </a></li>
+            </ul>
+         </nav>
         
         
-        <section class="double" style="margin-top:200px; height:385px">
+        <section class="double" style="margin-top:200px; height:405px">
             <img src="06flower/06_panel_1a.jpg" >
             <img src="06flower/06_panel_1b.jpg" >
             
@@ -58,13 +67,13 @@
         
         <br>
         
-        <section style="height:270px" >
-            <img src="06flower/06_panel_2.jpg" >
+        <section style="height:310px" >
+            <img src="06flower/06_panel_2.png" >
             <div class="bubbles">
-                 <p class="bubble friend" style="top:-362px; left:227px; max-width:150px">
+                 <p class="bubble friend" style="top:-400px; left:217px; max-width:160px">
                 ah yes, I thought so.</p>
                 
-                <p class="bubble friend small" style="top:-170px; left:290px;max-width:170px">I know where it grows, I think!
+                <p class="bubble friend small" style="top:-270px; left:280px;max-width:170px">I know where it grows, I think!
                 </p></div>
         
         </section>
@@ -435,6 +444,29 @@ var scene = new ScrollMagic.Scene({
            
         
         </script>
+        
+           <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function navButton() {
+    document.getElementById("nav").classList.toggle("navshow");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.nav')) {
+
+    var dropdowns = document.getElementsByClassName("nav-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('navshow')) {
+        openDropdown.classList.remove('navshow');
+      }
+    }
+  }
+}
+</script>
     </body>
     
 </html>

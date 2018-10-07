@@ -278,7 +278,7 @@ iframe{
                 text-transform:uppercase;
                 font-size:30px;
                 background-color: white;
-                background-color: #fff8da;
+/*                background-color: #fff8da;*/
                 border-radius:35%;
                 padding:15px 12px;
     z-index: 999999;
@@ -342,7 +342,7 @@ iframe{
 .nav {
     position: fixed;
     color: white;
-    padding: 16px;
+    padding: 20px;
 /*    border-radius: 50%;*/
 /*    margin:10px;*/
     right:15px;
@@ -355,6 +355,7 @@ iframe{
 .nav:hover, .nav:focus {
     
     opacity: 1;
+    cursor: pointer;
 }
 .navshow{
     display: block;
