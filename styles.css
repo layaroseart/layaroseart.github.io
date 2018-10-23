@@ -29,15 +29,19 @@ body{
 
  h1 {
                 font-family: Garamond, serif;
+/*     font-family: 'Merienda', cursive;*/
                 font-size: 5em;
                 letter-spacing: 10px;
+/*     letter-spacing: 5px;*/
                 margin:10px auto;
                 text-align: center;
-                color: white;
+                color: #bca465;
                 margin-top:47vh;
+     font-weight: 100
             }
+
             .about,.about a{
-                font-family: garamond;:
+                font-family: garamond;
                 text-align: center;
                 color:white;
                 text-decoration: none;
@@ -230,7 +234,7 @@ iframe{
     
     
 }
-.pagination a, .paginationB a {
+.pagination a, .paginationB a, .end {
     font-size: 2em;
     text-decoration: none;
     text-transform: uppercase;
@@ -285,6 +289,10 @@ iframe{
     
                 
             }
+
+.bubbles img{
+    position: absolute;
+}
 .small{
     font-size: 25px;
 /*    max-width: 50px;*/
@@ -295,10 +303,11 @@ iframe{
     opacity:.8;
 }
 .friend{
-    background-color: #ffd2f6;
+    background-color: rgba(255, 210, 246, 1);
 }
 .fey{
-    background-color: #daffba;
+    background-color: #B5FFDB;
+    color: #054b20;
 }
 
 
@@ -306,10 +315,14 @@ iframe{
     position: relative;
     float: left;
     max-width:210px;
+    opacity:.8
     
 }
 .eye:hover{
     opacity: 0;
+     transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -webkit-transition: opacity .3s ease-in-out;
 }
 
 
@@ -352,7 +365,7 @@ iframe{
     font-size: 3em;
 }
 
-.nav:hover, .nav:focus {
+.nav:hover, .nav:focus, .nav:active {
     
     opacity: 1;
     cursor: pointer;
@@ -375,6 +388,9 @@ iframe{
     display: none;
 }
 
+.border{
+/*    border:3px solid white;*/
+}
 
 /*PAGE 1*/
 
@@ -388,7 +404,8 @@ iframe{
                 margin: auto;
                 position: relative;
 /*                margin-bottom: -50px;*/
-                margin-left:300px;
+                margin-left:700px;
+/*                margin-left:30%;*/
                 margin-bottom: -500px;
                 
             }
@@ -444,10 +461,10 @@ iframe{
 
 .svg{
     margin: 10 auto;
-stroke: #4aad87;
-    stroke-width:27px;
+stroke: #b9e3ce;
+    stroke-width:10px;
     stroke-linecap: round;
-/*    fill:white;*/
+    fill:none;
      height: auto;
   left: 0;
 /*  max-width: 800px;*/
@@ -456,11 +473,22 @@ stroke: #4aad87;
   z-index: 100;
 }
 
+.finalplant{
+    stroke: #fafff2;
+    stroke-width:6px;
+}
+
+#plant1 {
+    stroke: #edfff9;
+    stroke-width:2px;
+}
+
 /*PAGE 6b*/
 
-.weed {
-    width:300px;
+.weed, .weedfirst {
+    width:230px;
     position:absolute;
+    cursor: pointer;
 /*    float:left;*/
     
 }
@@ -478,14 +506,37 @@ stroke: #4aad87;
   
 }
 
+#message{
+    margin:450px  0 0 690px;
+    position: absolute; 
+    width:160px;
+/*    float:right;*/
+
+    cursor: pointer;
+    
+    -webkit-transition: all .5s;  /* Safari */
+    transition: all .5s;
+}
+
+#message:hover{
+    margin: 300px 0 0 570px;
+    width:400px;
+
+    
+    
+}
 
 
+#svgtitle{
+                width:550px; margin: -190px 150px 0;
+   
+            }
 
 /*MOBILE*/
 
 
 .big{
-   transform: scale(1.5);
+   transform: scale(1.4);
     z-index:9;
 
 }
@@ -532,7 +583,7 @@ stroke: #4aad87;
 /*        width:800px;*/
         margin-bottom: -800px;
     }
-    .pagination a, .paginationB a {
+    .pagination a, .paginationB a, .end {
         font-size: 3.5em;
     }
     
@@ -544,7 +595,8 @@ stroke: #4aad87;
             {
                 height:1150px;
                 width:4794px;
-                margin-left:0;
+                margin-left:100px;
+          
                 
 
                 
@@ -591,7 +643,7 @@ stroke: #4aad87;
     }
 }
     
-@media only screen and (max-width:1020px) {
+@media only screen and (max-width:1030px) {
      #choice{
 /*        width:1000px;*/
         height:85vh;
@@ -613,8 +665,10 @@ stroke: #4aad87;
         height:100%;
 /*        width:auto;*/
 /*        position: relative;*/
-        margin:0 -30vh auto;
-/*        left:-50%;*/
+/*        margin:0 -500px auto;*/
+        margin:0 -25vh auto;
+/*        30vh on mobile*/
+/*        left:-50vw;*/
         width:auto;
     }
     
@@ -623,7 +677,7 @@ stroke: #4aad87;
         height:auto;
     width:690px;
     padding-top: 15vh;
-        margin:0 30vh ;
+        margin:0 38% ;
 }
 #choice .arrows img{
     width:220px;
@@ -657,5 +711,26 @@ stroke: #4aad87;
        
        
 }
+
+/*
+@media only screen and (min-width:3000px) {
+    
+    section{
+     
+    }
+    .fullsize{
+           transform: scale(1.05) ;
+            
+    }
+    .big{
+        transform: scale(1.5)
+ 
+}
+    
+    #choice{
+        transform: scale();
+    }
+}
+*/
 
 
