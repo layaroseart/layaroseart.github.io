@@ -31,8 +31,9 @@
  
         <style>
         
-        
-/*            .bubble{position:relative}*/
+            .nav, nav, nav a{
+                color:black;
+            }
         </style>
         
         
@@ -66,7 +67,7 @@
         </section>
         
         
-        <section style="height:700px; margin-top:-700px; z-index:9999">
+        <section style="height:700px; margin-top:-700px; z-index:9999; height:700px">
             <img src="01/email_2.jpg" class="email e1" style="top:160px; left:530px;">
         <img src="01/email_1.jpg" class="email e2" style="top:340px; left:180px;">
             <img src="01/email_3.jpg" class="email e3" style="top:310px; ">
@@ -288,7 +289,7 @@ var control = new ScrollMagic.Controller();
     .to(".walktrees", .7, {x:-250},.3 )
     .to(".bubbles", .7, {x:-120},.3 )
     .to(".walktrees2", .7, {x:-150},.3 )
-    .from(".nav, nav, nav a", .05, {color:"black"}, 0)
+    .to(".nav, nav, nav a", .05, {color:"white"}, 0)
    
               ;
  
@@ -327,7 +328,7 @@ else {
     .to(".lookout",.02, {opacity:0}, 0)
      .to(".walktrees", .7, {x:-250},.3 )
     .to(".walktrees2", .7, {x:-150},.3 )
-        .from(".nav, nav, nav a", .05, {color:"black"}, 0)
+        .to(".nav, nav, nav a", .05, {color:"white"}, 0)
    ;
  
     
