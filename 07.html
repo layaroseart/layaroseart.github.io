@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+        <link rel="stylesheet" type="text/css" href="styles.css" /> 
+ 
+		<meta name="description" content="overgrown" />  
+        
+		<title>Overgrown 07</title>
+         <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600" rel="stylesheet">
+        
+        
+<!--        jquery-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <!--        gsap-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!--        scrollmagic-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>     
+    <!--        indicators-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+<!--        gsap animation-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#194950">
+<meta name="theme-color" content="#ffffff">
+        
+        
+        <style>
+            body{
+/*                background-color: #4B677d;*/
+                background-color: #7C9BBA;
+
+
+                     
+
+            }
+    
+            .paginationB a{
+                color:#000;
+            }
+            
+        </style>
+        
+        
+        
+        
+    </head>
+    
+<body>
+    
+    <a onclick="navButton()" class="nav">?</a>
+        <nav id="nav" class="nav-content">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="05.html"> ❮ </a> &nbsp;  &nbsp;&nbsp;&nbsp;
+                <a href="08.html">❯ </a></li>
+            </ul>
+         </nav>
+        
+        <section style="margin:150px auto -1050px; height:900px " class="blackout2">
+            <img src="07/07_panel_2.jpg" style="width:470px">
+            <img src="07/07_panel_2a.jpg" style="width:300px; margin: -150px 0 0 500px">
+            <img src="07/07_panel_2b.jpg" style="width:300px; margin: -310px 0 0 170px">
+            
+        </section>
+        
+        
+        <section class="fullsize" style="height:1800px">
+            <img src="07/07_panel_1.jpg" >
+            <img src="07/07_panel_1b.jpg" style="position: relative; top:-1796px; opacity:0" class="blackout" >
+                <img src="02/02_eye_a.png" class="eye" style="margin-top:-2465px; margin-left:-50px; max-width:300px; transform:rotate(-10deg)" >
+                <img src="02/02_eye_b.png" class="eye e2" style="margin-top:-2550px; margin-left:630px; max-width:300px; transform:rotate(-10deg)" >
+            
+            <div class="bubbles">
+            <p class="bubble" style="top:-2474px; left:140px; max-width: 250px" id="blackout">we've done all three tasks now, right? so how-</p>
+            
+            </div>
+        
+        </section>
+        
+        <section class="double blackout3" style="height:450px; margin-top:-70px" >
+            <img src="07/07_panel_5a.png" style="margin-top:-52px">
+            <img src="07/07_panel_5b.jpg">
+            
+            <div class="bubbles">
+            <p class="bubble fey" style="top:180px; left:270px; max-width: 250px">hello!</p>
+            
+            </div>
+        
+        </section>
+    <br><br>
+        
+        
+        <section style="padding: 200px auto; ">
+            <img src="07/07_panel_6.png">
+            
+            <div class="bubbles">
+            <p class="bubble fey" style="top:-470px; left:410px; max-width: 250px ">you've<br> completed your tasks admirably!</p>
+            <p class="bubble fey" style="top:-300px; left:550px; ">so long since someone's done so well!</p>
+            <p class="bubble fey" style="top:10px; left:260px; ">we'll be sad to see you leave...</p>
+            
+            </div>
+        
+        </section>
+        
+        
+        
+        
+        
+        <section class="fullsize" style="margin-top:-300px">
+        <img src="07/07_panel_7.jpg">
+            <div class="bubbles">
+            <p class="bubble" style="top:-695px; left:125px; max-width:150px">how do I get home?</p>
+                <p class="bubble small" style="top:-546px; left:278px; ">I've done what you asked...</p>
+             </div></section>
+        
+        <section>
+            <img src="07/07_panel_8.jpg">
+            
+            <div class="bubbles">
+            <p class="bubble fey" style="top:-470px; left:330px; max-width: 150px ">Oh, can't you see?</p>
+                <p class="bubble fey" style="top:-150px; left:560px; max-width: 200px "> just through there...</p>
+                
+             </div>
+        </section>
+        
+        <section style="width:700px">
+            <img src="07/07_panel_9.jpg">
+        </section>
+        
+        
+        <section class="fullsize" style=" height:979px; overflow: visible" id="sneak">
+            <img src="07/07_panel_10.jpg" style="height:979px; width:1318px; margin:0 -15%">
+            
+            <img src="07/07_panel_10b.jpg" class="sneak1" style="position: relative;top:-983px;height:979px; width:1318px;margin:0 -15%">
+            
+            <img src="07/07_panel_10c.jpg" class="sneak2" style="position: absolute;  height:979px; width:1318px;margin:-1965px -15% 0">
+        </section>
+        
+        
+        <section style="height:470px; background-image: url(07/07_panel_11b.jpg); background-size: contain; background-repeat: no-repeat" id="oho">
+<!--            <img src="07/07_panel_11.jpg">-->
+             <img src="07/07_panel_11.jpg" style="position: absolute;" class="oho">
+            
+            <div class="bubbles">
+            <p class="bubble fey oho" style="top:80px; left:560px; max-width:150px " >ohoho, not so fast!</p>
+                <p class="bubble fey oho" style="top:240px; left:595px; ">you can't<br> both leave..</p>
+             </div>
+        </section>
+        
+        <section  style="width:700px; margin: 60px auto">
+            <img src="07/07_panel_12.jpg">
+            
+            <div class="bubbles">
+            <p class="bubble" style="top:-420px; left:250px; ">but... we both did the tasks!</p>
+                
+             </div>
+        </section>
+        
+        <section style="width:px" >
+            <img src="07/07_panel_13.png">
+            
+ 
+        
+            <div class="bubbles">
+                
+                 <p class="bubble fey" style="top:-770px; left:425px; ">hmmmm...</p>
+                <p class="bubble fey" style="top:-682px; left:575px; ">no.</p>
+                <p class="bubble fey" style="top:-330px; left:185px; ">three tasks, gain...</p>
+                <p class="bubble fey" style="top:-155px; left:90px; ">one freedom..</p>
+             </div>
+        </section>
+        
+        <section>
+            
+        </section>
+       
+        
+        <section >
+            <img src="07/07_panel_14.jpg" style="margin-top:0px; width:500px">
+            <img src="07/07_panel_15.jpg" style="margin:30px 0 0 200px; width:400px">
+        </section>
+        
+      
+        <br>
+        <section style="height:250px; overflow: hidden;">
+            <img src="07/07_panel_16.jpg" >
+            <img src="07/07_panel_16.png"  id="running" style="position: relative; top:-260px; margin-left:-400px; height:280px">
+        </section>
+    <br>
+        
+        <section style="" >
+            
+             <div style="background-image: url(07/07_panel_18.jpg); background-size: contain; margin:100px 0 0; height:760px; width:380px; float:left" id="poof">
+                 
+                <img src="07/07_panel_18a.jpg" class="poof" style="top:0; position: relative">
+            
+            </div>
+            <br>
+            
+            <div style="height:302px; background-image:url(07/07_panel_17.jpg); background-size: contain; width:400px; float:right; overflow: hidden">
+                <img src="07/07_panel_17.png" id="throww" >
+            </div>
+            
+            <img src="07/07_panel_17a.jpg" style="width:400px; float:right; margin-top:90px">
+            
+            <img src="07/07_panel_17b.png"style="width:200px; top:400px; left:400px; z-index:99999; position: absolute" id="flower" >
+        </section>
+      <br>
+            
+       
+        
+        <section style="z-index:9" >
+            
+           
+        </section>
+        
+        <section class="fullsize" style="height:1144px; overflow-x:visible; " id="run">
+            <img src="07/07_panel_19b.jpg"  style="width:1600px; margin:0 -28%">
+            <img src="07/07_panel_19.jpg" class="run" style="position: relative; width:1600px; margin:0 -28%;margin-top:-1145px; top:-21px">
+        </section>
+       
+<!--        background-image: url(07/07_panel_19b.jpg); background-size: contain; margin-bottom-600px
+
+position: relative;top:-983px;height:979px; width:1318px;margin:0 -15%-->
+        
+        
+        <section class="paginationB" style="margin-top:-100px">
+            <a href="05.html" > ❮  Back </a>
+            <a href="01.html">Home</a>
+            <a href="08.html">Next ❯ </a>
+    </section>
+        
+        
+        <script>
+        
+        
+           $(document).ready(function () {
+       
+    
+    var controller = new ScrollMagic.Controller();
+               
+               var bg = new TimelineMax();
+                
+                bg.to("body", .1, {backgroundColor: "#7C9BBA"}, 0)
+                    ;
+               
+                var blackout = new TimelineMax();
+                
+                blackout.from("body", .1, {backgroundColor: "#7C9BBA"}, 0)
+                    .to(".blackout", .1, {opacity:1}, 0)
+               .to(".blackout2", .1, {opacity:0}, 0)
+               .to(".e2", .1, {opacity:0}, 0)
+               .from(".blackout3", .3, {opacity:0}, )
+               .to("body", .1, {backgroundColor: "#1D2A44"}, 0);
+               
+              
+    
+ var sneak = new TimelineMax();
+                
+                sneak.from(".sneak1", .1, {opacity:0}, "+=.5")
+               .from(".sneak2", .1, {opacity:0},"+=.5")
+
+                              ;
+
+               
+ var oho = new TimelineMax();
+                
+                oho.from(".oho", .3, {opacity:0})
+
+               
+               ;
+ var running = new TimelineMax();
+                running
+//                    .from("#running", .2, {opacity:0,})
+                    
+               .to("#running", .5, {marginLeft:"780px"})
+               
+               ;
+    
+ var throww = new TimelineMax();
+                
+                throww.to("body", .1, {backgroundColor:"#1D2A44"}, 0)
+               //blue
+                    .to("#throww", 1, {marginLeft:"400px", }, "+=.2")
+               
+               .to("body", 2.3, {backgroundColor:"#3E6C55"}, .2)//green
+               .to("#throww", .1, {opacity:0,})
+               
+                .to("#flower", .5, {left:"130px", top:"550px", width:"100px", ease: Circ.easeOut, rotation: -40}, )
+               
+               .from(".poof", .2, {opacity:0,})
+               .to("#flower", .2, {opacity:0,})
+               
+               
+                    .to("body", 2, {backgroundColor:"#ECFCD0"}, 2.6)
+               
+               
+            
+               
+               ;
+               
+
+var run = new TimelineMax();
+                
+                run
+//                    .from("body", .2, {backgroundColor:"#1D2A44"})
+//               .to("body", .2, {backgroundColor:"#ECFCD0"})
+                    .to(".run", .2, {opacity:0,},)
+               .to("body", .2, {backgroundColor:"#fff"}, 0)
+               .to("#run", .2, {opacity:0,},)
+               .to(".nav, nav, nav a", .05, {color:"black"}, 0)
+//               .to(".paginationB", .2, {position:"fixed"}, .5 )
+               
+               ;
+               
+               
+    ///SCENES    
+                
+               //sneak
+    var scene = new ScrollMagic.Scene({ triggerElement: "#sneak",duration: 600,triggerHook: .5
+  })
+    
+.setTween(sneak)
+//.addIndicators({name: "running desk"})
+    .addTo(controller);
+               
+                                 //oho
+    var scene = new ScrollMagic.Scene({ triggerElement: "#oho",duration: 0,triggerHook: .4
+  })
+    
+.setTween(oho)
+//.addIndicators({name: "running desk"})
+    .addTo(controller);
+               
+                   
+               
+               
+               
+               
+               
+if ( $(window).width() > 1090) {  
+    
+
+    
+    //blackout
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#blackout",
+    duration: 0,
+    triggerHook: .3
+  })
+    
+.setTween(blackout)
+
+  .addTo(controller);
+    
+    
+    //running
+    var scene = new ScrollMagic.Scene({ triggerElement: "#running",duration: 400,triggerHook: .5
+  })
+    
+.setTween(running)
+//.addIndicators({name: "running desk"})
+    .addTo(controller);
+              
+
+               
+               
+               //throw
+    var scene = new ScrollMagic.Scene({ triggerElement: "#throww",duration: 950,triggerHook: .6
+  })
+         
+.setTween(throww)
+//.setTween(flower)
+//.setPin("#throww", {pushFollowes:false})
+//.addIndicators({name: "throw desk"})
+    .addTo(controller);
+    
+    
+    //run
+    var scene = new ScrollMagic.Scene({triggerElement: "#run",   duration: 500, triggerHook: 0
+  })
+    
+.setTween(run)
+    .setPin("#run")
+
+//  .addIndicators({name: "run desk"})
+
+  .addTo(controller);
+  
+    
+    
+} else {
+    
+    //blackout
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#blackout",
+    duration: 0,
+    triggerHook: .5
+  })
+    
+.setTween(blackout)
+
+  .addTo(controller);
+    
+//running
+    var scene = new ScrollMagic.Scene({ triggerElement: "#running",duration: 600,triggerHook: .6
+  })
+    
+.setTween(running)
+//.addIndicators({name: "running desk"})
+    .addTo(controller);
+              
+
+               
+               
+               //throw
+    var scene = new ScrollMagic.Scene({ triggerElement: "#throww",duration: 1250,triggerHook: .6
+  })
+         
+.setTween(throww)
+//.setTween(flower)
+//.setPin("#throww", {pushFollowes:false})
+//.addIndicators({name: "throw desk"})
+    .addTo(controller);
+          
+//run
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#run",
+    duration: 700,
+    triggerHook: .25
+  })
+    
+.setTween(run)
+ .setPin("#run")
+
+//  .addIndicators({name: "run mobile"})
+
+  .addTo(controller);
+               
+           }
+  
+});
+            
+           
+        
+        </script>
+    
+       <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function navButton() {
+    document.getElementById("nav").classList.toggle("navshow");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.nav')) {
+
+    var dropdowns = document.getElementsByClassName("nav-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('navshow')) {
+        openDropdown.classList.remove('navshow');
+      }
+    }
+  }
+}
+</script>
+        
+    </body>
+    
+</html>

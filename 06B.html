@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+        <link rel="stylesheet" type="text/css" href="styles.css" /> 
+ 
+		<meta name="description" content="overgrown" />  
+        
+		<title>Overgrown 06 - Beast Quest</title>
+         <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600" rel="stylesheet">
+        
+        
+<!--        jquery-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <!--        gsap-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!--        scrollmagic-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>     
+    <!--        indicators-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+<!--        gsap animation-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
+        
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#194950">
+<meta name="theme-color" content="#ffffff">
+        
+        
+        <style>
+            body{
+                background-color: #555080;
+            }
+            
+            section{
+                margin: 40px auto;
+            }
+            
+            
+        </style>
+        
+        
+        
+        
+    </head>
+    
+    <body>
+        
+        <a onclick="navButton()" class="nav">?</a>
+        <nav id="nav" class="nav-content">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li>
+                <a href="05.html">❯ </a></li>
+            </ul>
+         </nav>
+    
+    
+        
+        
+        <section class="fullsize " style="height:770px; margin-top:50px">
+            <img src="06beast/06_panel_1.jpg">
+            
+            <img src="02/02_eye_a.png" class="eye" style="margin-top:-540px; margin-left:820px; max-width:180px" >
+            <div class="bubbles">
+            <p class="bubble" style="top:-720px; left:300px;">
+ok, so how do we find this ...beast?</p>
+            <p class="bubble" style="top:-600px; left:580px;">
+not that I exactly <i>want</i> to, but...</p>
+            </div>
+        
+            
+        </section>
+        
+        <br>
+        
+        <section style="height:325px">
+            
+        <img src="06beast/06_panel_2a.jpg">
+            <div class="bubbles">
+            <p class="bubble" style="top:-330px; left:25px; max-width:180px">
+this one, i don't know...</p>
+            <p class="bubble " style="top:-208px; left:520px; max-width:250px;">
+maybe if we just keep wandering around it'll come to us...</p>
+            </div>
+        </section><section style="height:326px">
+            
+           <img src="06beast/06_panel_2b.jpg">
+            <div class="bubbles">
+
+            <p class="bubble" style="top:-398px; left:222px; border-radius: 45% ">
+that...<br> doesn't sound promising... </p>
+                <p class="bubble" style="top:-205px; left:300px;  ">
+but I guess we've got no other choice...</p>
+            </div>
+          </section >
+        
+        <section class="fullsize" style="height:1200px, margin-top:-200px"><img src="06beast/06_panel_3.png">
+         <img src="02/02_eye_a.png" class="eye" style="margin-top:-820px; margin-left:-80px; max-width:300px" ></section>
+        
+        
+        <br><br>
+        <section class="double" id="shake" style="margin-top:200px; width:900px">
+            
+            <img src="06beast/06_panel_4a.jpg" class="shake1" style="width:430px">
+            <img src="06beast/06_panel_4b.jpg" class="shake2" style="width:430px">
+            
+            <div class="bubbles shakebubble">
+                <p class="bubble" style="top:7px; left:630px; max-width:150px; transform:rotate(-2deg)">
+                       <i> what was that???</i></p>
+            </div>
+            
+             
+             </section>
+        
+        <br><br>
+        <section style="margin-top: 600px"  id="stomp" class="double">
+            <img src="06beast/06_panel_5.jpg" style="width:400px; margin: 10px 200px;" class="stomp">
+            <div class="bubbles">
+                <p class="bubble" style="top:-31px; left:492px; border-radius: 35%">
+                        i think... that's the beast..</p>
+            </div>
+            
+            
+            <img src="06beast/06_panel_5a.gif" style="width:230px; margin: 30px 50px 0 0" class="stomp1">
+            <img src="06beast/06_panel_5b.gif" style="width:230px; margin: 150px 50px 0 0px " class="stomp2">
+            <img src="06beast/06_panel_5c.gif" style="width:230px; margin: 300px 0 50px 0" class="stomp3">
+            
+        </section>
+        
+    <section id="blarghtrigger"></section>
+        
+        <section class="fullsize" id="blargh" >
+            <img src="06beast/06_panel_6.jpg">
+            <img src="06beast/06_panel_6a.png" style="position: relative; margin:-430px 350px 0 ; width:300px; opacity:0" class="blargh">
+        </section>
+        
+        <section class="desktopbubbles" style="height:300px"></section>
+        
+        <section style="width:700px"><img src="06beast/06_panel_7.jpg"></section>
+        
+        
+        
+       <section class="middle" id="run">
+           <img src="06beast/06_panel_8.jpg">
+           <img src="06beast/06_panel_8a.png" style="position: absolute; margin-top:-974px" class="run">
+        </section>
+        
+    
+        
+        
+        <section><img src="06beast/06_panel_10.gif">
+            
+             <div class="bubbles">
+                <p class="bubble" style="top:-80px; left:510px;">
+                        quick, up here!</p>
+            </div>
+        </section>
+        
+        
+        
+        <section>
+        <img src="06beast/06_panel_11.png">
+        </section>
+        
+        <section class="fullsize" style="margin-bottom:100px"><img src="06beast/06_panel_12.jpg">
+        
+        <div class="bubbles" style="margin: 100px auto">
+            <p class="bubble" style="top:-460px; left:755px;max-width:180px">
+                    phew, that was close...</p>
+            </div></section>
+        
+        <section  >
+        <img src="06beast/06_panel_12.png">
+            <img src="02/02_eye_a.png" class="eye" style="margin-top:-930px; margin-left:250px; max-width:180px" >
+<!--
+            <img src="06beast/06_panel_12b.jpg" style="margin-top:100px">
+            <img src="06beast/06_panel_12c.jpg" style="margin-top:100px">
+-->
+            
+            <div class="bubbles">
+                <p class="bubble" style="top:-1100px; left:300px; max-width:250px">
+                    so.. how are we supposed to get this 'scale' or whatever...</p>
+            <p class="bubble small" style="top:-615px; left:430px; max-width:220px">
+                    does it even <i>have</i> scales? I can just <br>see, like...fungi..</p>
+                <p class="bubble" style="top:-185px; left:150px; max-width:250px">
+                    we can't <br>exactly get near this thing...</p>
+            </div>
+            
+         
+        </section>
+        
+           
+        
+
+        
+        
+        <section class="fullsize" >
+           
+            <img src="06beast/06_panel_14.jpg" >
+            
+            
+            <div class="bubbles">
+            <p class="bubble" style="top:-520px; left:80px;">
+                    hmmm...</p>
+            </div>
+            
+            
+   </section>
+        
+        <section class="double" style=margin-top:30px>
+            
+            <img src="06beast/06_panel_14a.jpg" style="margin-left:00px">
+            <img src="06beast/06_panel_14b.jpg" style="margin:100px 0px 30px 30px">
+            <img src="06beast/06_panel_14c.jpg" style="margin:0px 0 50px 200px">
+                
+        </section>
+        
+        
+        <section style="width:700px; margin-top:100px">
+            <img src="06beast/06_panel_15.jpg">
+        </section>
+        
+        
+        
+        <section class="fullsize">
+            <img src="06beast/06_panel_16a.jpg" style="width:320px; margin:80px 0 0 100px; position: relative;">
+            <img src="06beast/06_panel_16.jpg" style="margin-top:-290px">
+            
+    
+        </section>
+        
+        <section>
+        
+            <img src="06beast/06_panel_16b.jpg" style="width:250px; margin:-450px 0 0 550px; position: absolute;" id="vine">
+        </section>
+        
+        
+        <section style="margin-top:x">
+            <img src="06beast/06_panel_17.png">
+            
+            <div class="bubbles">
+            <p class="bubble small" style="top:-350px; left:210px; max-width:150px; background-color:rgba(255, 255, 255, 0)">
+                    I hope I don't regret this...</p>
+            </div>
+        </section>
+        
+        <section>
+            <img src="06beast/06_panel_17_a.gif">
+        </section>
+        
+       <section class="fullsize" style="margin-top:-50px" id="jump">
+           <img src="06beast/06_panel_17_c.png" class="jump1">
+            <img src="06beast/06_panel_17_c2.png" style="position: relative; margin-top:-900px; top:-21px" class="jump2">
+            <img src="06beast/06_panel_17_c3.png" style="position: relative; margin-top:-900px; top:-42px"  class="jump3">
+        
+        </section>
+            
+        <section style="margin: -40px auto 1200px" ><img src="06beast/06_panel_17_b.jpg"></section>
+        
+       
+        
+        <section style="margin-top:-150px;margin-bottom: -320px; transform: rotate(8deg); width:610px"  id="lick">
+            <img src="06beast/06_panel_17_d.jpg" style="margin-left:-120px">
+             <img src="06beast/06_panel_17_e.jpg" style="top:-401px; position: relative;margin-left:-120px" class="lick">
+           
+        </section>
+        
+        <section class="fullsize">
+            <img src="06beast/06_panel_17_ff.jpg">
+        </section>
+        
+        <section class="double" style="margin: -70px auto 400px">
+            
+            <img src="06beast/06_panel_17_f.jpg">
+        </section>
+        
+        
+        
+        
+        
+    
+        
+        <section>
+            <img src="06beast/06_panel_18.jpg" style="width:400px; margin: 0 200px">
+            
+            <img src="06beast/06_panel_18a.png" style=" margin: 0 auto -300px;  top:-640px; position: relative; width:900px">
+           
+        
+        </section>
+        
+        <section  style="margin-top:50px;">
+            <img src="06beast/06_panel_19.jpg">
+            
+            <div class="bubbles">
+            
+                <p class="bubble fey" style="top:-565px; left:40px;">
+                very good!!</p>
+                <p class="bubble fey" style="top:-440px; left:550px;">
+                    just what i wanted...</p>
+            </div>
+        </section>
+        
+        <section></section>
+        
+        <section class="fullsize" style="background-image: url( 06beast/06_panel_20.jpg); background-size: contain; margin:100px auto; height:720px" id="bye">
+            
+            
+            <img src="06beast/06_panel_20a.jpg" class="bye">
+            
+            <div class="bubbles">
+            
+                <p class="bubble fey bye" style="top:-660px; left:70px;" >
+                off you go, then!</p>
+                <p class="bubble fey bye" style="top:-300px; left:690px;"   >
+                    finish your tasks! </p>
+            </div>
+        </section>
+        
+        <section style="width:600px"><img src="06beast/06_panel_21.jpg">
+            <div class="bubbles">
+                <p class="bubble" style="top:-325px; left:490px;">
+                    okay....</p>
+            </div>
+        </section>
+        <br>
+        
+        <section style="margin-bottom:-40px">
+            <img src="06beast/06_panel_22.jpg">
+            <div class="bubbles">
+                <p class="bubble" style="top:-455px; left:340px;">
+            let's carry <br>on, i guess....</p>
+            </div></section>
+        
+        
+        
+        
+        
+    
+        <section class="paginationB" >
+                <a href="01.html">Home</a>
+                <a href="05.html" >Next ❯ </a></section> 
+        
+        
+         <script>
+        
+        
+           $(document).ready(function () {
+       
+    
+    var controller = new ScrollMagic.Controller();
+    
+
+  //shake
+           
+
+    
+     var shake = new TimelineMax();
+                
+                shake.to(".shake1", .2, { y:"+=50", yoyo:true, repeat:2,  ease: Elastic.easeOut.config(1, 0.3)}) 
+               
+                .to(".shake1", .01, {y:"-+50",})
+               .from(".shake2", .1, {opacity:0}, "+=.4")
+               .from(".shakebubble", .1, {opacity:0}, "+=.1")
+               ;
+               
+    var stomp = new TimelineMax();
+               stomp.from("#stomp", .1, {opacity:0})
+                   .from("#stomp", .3, { y:"+=30", yoyo:true, repeat:2,  ease: Elastic.easeOut.config(1, 0.3)})
+               
+                    .from(".stomp1", .1, {opacity:0}, "+=.3")
+                   .from(".stomp1", .3, { y:"+=20", yoyo:true, repeat:2,  ease: Elastic.easeOut.config(1, 0.3)}) 
+               
+               .from(".stomp2", .1, {opacity:0}, "+=.4")
+               .from(".stomp2", .3, { y:"+=20", yoyo:true, repeat:2,  ease: Elastic.easeOut.config(1, 0.3)}) 
+               
+               .from(".stomp3", .1, {opacity:0}, "+=.4")
+               .from(".stomp3", .3, { y:"+=20", yoyo:true, repeat:2,  ease: Elastic.easeOut.config(1, 0.3)}) 
+               .to("body", 2.5, {backgroundColor:"#794845"}, 0)
+     ;
+           
+            
+               
+               
+               
+//               if ("vibrate" in navigator) {
+//	// vibration API supported
+//}
+//               
+               
+               
+               
+               
+    var blargh = new TimelineMax();
+                
+                blargh.to(".blargh", .6, {opacity:1, width:"980px", ease: Back.easeOut.config(5), marginLeft:"0px", marginTop:"-850px", y:-20
+                                         })
+               ;
+               
+               
+     var lick = new TimelineMax();
+                
+                lick.from(".lick", .4, {opacity:0})
+                .to(".lick", .2, {opacity:0})
+               
+               ;
+               
+               var jump = new TimelineMax();
+               
+            jump.to("body", 20, {backgroundColor:"#bdc8dd"}, 6)
+               
+               .to(".jump1", 4, {opacity:0}, 17 )
+               
+               .from(".jump2", 7, {opacity:0},13 )
+               
+               .to(".jump2", 6, {opacity:0}, )
+               
+               .from(".jump3", 7, {opacity:0}, 19)
+               ;
+               
+     var bye = new TimelineMax();
+                
+                bye.to(".bye", .5, {opacity:0})
+               ;
+               
+if ( $(window).width() > 1090) {  
+    
+    //shake
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#shake",
+    duration: 0,
+    triggerHook: .3
+  })
+    
+.setTween(shake)
+//  .addIndicators({name: "shake"})
+  .addTo(controller);
+    
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#shake",
+    duration: 400,
+    triggerHook: .2
+  })
+    
+
+    .setPin("#shake")
+//  .addIndicators({name: "shake"})
+  .addTo(controller);
+    
+    
+    
+     //stomp
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#stomp",
+    duration: 0,
+    triggerHook: .6
+  })
+    
+.setTween(stomp)
+//.reverse(false)
+
+//  .addIndicators({name: "stomp"})
+  .addTo(controller);
+    
+    
+    
+      //blargh
+    
+var scene = new ScrollMagic.Scene({
+    triggerElement: "#blarghtrigger",
+    duration: 0,
+    triggerHook: .1
+  })
+    
+.setTween(blargh)
+//.setPin("#blargh")
+.reverse(false)
+//  .addIndicators({name: "blargh"})
+.addTo(controller);
+    
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#blargh",
+    duration: 600,
+    triggerHook: 0
+  })
+        
+
+.setPin("#blargh", {pushFollowers:false})
+
+//  .addIndicators({name: "blargh"})
+.addTo(controller); 
+   
+    
+     //vine
+    
+var scene = new ScrollMagic.Scene({
+    triggerElement: "#vine",
+    duration: 152,
+    triggerHook: .1
+  })
+    
+
+.setPin("#vine")
+
+//  .addIndicators({name: "blargh"})
+.addTo(controller);
+    
+    
+    
+         //jump
+    
+var scene = new ScrollMagic.Scene({
+    triggerElement: "#jump",
+    duration: 1350,
+    triggerHook: .1
+  })
+    
+.setTween(jump)
+.setPin("#jump", {pushFollowers: false})
+
+//  .addIndicators({name: "blargh"})
+.addTo(controller);
+    
+    //lick
+    
+var scene = new ScrollMagic.Scene({
+    triggerElement: "#lick", duration: 0, triggerHook: 0  })
+.setTween(lick)
+//  .addIndicators({name: "blargh"})
+.addTo(controller);
+    
+
+  
+    
+    //bye
+    
+    var scene = new ScrollMagic.Scene({
+        triggerElement: "#bye", 
+        duration: 0, 
+        triggerHook: 0
+    })
+    
+    .setTween(bye)
+//  .addIndicators({name: "bye"})
+.addTo(controller);
+
+  
+    
+    
+} else {
+    
+//shake
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#shake",
+    duration: 0,
+    triggerHook: .7
+  })
+    
+  .setTween(shake)
+//    .reverse(false)
+//  .addIndicators({name: "shake"})
+  .addTo(controller);
+    
+    
+     //stomp
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#stomp",
+    duration: 0,
+    triggerHook: .5
+  })
+    
+.setTween(stomp)
+
+//.reverse(false)
+
+//  .addIndicators({name: "shake"})
+  .addTo(controller);
+    
+    
+          //blargh
+    
+var scene = new ScrollMagic.Scene({
+    triggerElement: "#blarghtrigger",
+    duration: 0,
+    triggerHook: .3
+  })
+    
+.setTween(blargh)
+.reverse(false)
+//  .addIndicators({name: "blargh"})
+.addTo(controller);
+    
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#blargh",
+    duration: 300,
+    triggerHook: .3
+  })
+
+//  .addIndicators({name: "blargh"})
+.addTo(controller);
+    
+    
+         //vine
+    
+var scene = new ScrollMagic.Scene({
+    triggerElement: "#vine",
+    duration: 152,
+    triggerHook: .3
+  })
+    
+
+.setPin("#vine")
+
+//  .addIndicators({name: "blargh"})
+.addTo(controller);
+    
+    //jump
+    
+var scene = new ScrollMagic.Scene({
+    triggerElement: "#jump",
+    duration: 1350,
+    triggerHook: .2
+  })
+    
+.setTween(jump)
+.setPin("#jump", {pushFollowers: false})
+
+//  .addIndicators({name: "blargh"})
+.addTo(controller);
+    
+    
+    //bye
+    
+    var scene = new ScrollMagic.Scene({
+        triggerElement: "#bye", 
+        duration: 0, 
+        triggerHook: .3
+    })
+    
+    .setTween(bye)
+//  .addIndicators({name: "bye"})
+.addTo(controller);
+
+    
+        
+var scene = new ScrollMagic.Scene({
+    triggerElement: "#lick", duration: 0, triggerHook: .3  })
+.setTween(lick)
+//  .addIndicators({name: "blargh"})
+.addTo(controller);
+    
+    
+    
+    
+    
+}
+     //outside of media query
+               
+                 //run
+    var scene = new ScrollMagic.Scene({
+    triggerElement: ".run",
+    duration: 300,
+    triggerHook: 0
+  })
+
+    .setPin(".run")
+
+//  .addIndicators({name: "bye desk"})
+
+  .addTo(controller);
+               
+               
+                           
+  
+});
+            
+           
+        
+        </script>
+        
+           <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function navButton() {
+    document.getElementById("nav").classList.toggle("navshow");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.nav')) {
+
+    var dropdowns = document.getElementsByClassName("nav-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('navshow')) {
+        openDropdown.classList.remove('navshow');
+      }
+    }
+  }
+}
+</script>
+        
+        
+        
+    </body>
+    
+</html>

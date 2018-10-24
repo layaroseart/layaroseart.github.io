@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+        <link rel="stylesheet" type="text/css" href="styles.css" /> 
+ 
+		<meta name="description" content="overgrown" />  
+        
+		<title>Overgrown 05</title>
+         <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600" rel="stylesheet">
+        
+        
+<!--        jquery-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <!--        gsap-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!--        scrollmagic-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>     
+    <!--        indicators-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+<!--        gsap animation-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
+        
+        
+<!--        parallaxer-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#194950">
+<meta name="theme-color" content="#ffffff">
+        
+        
+        <style>
+            body{
+                background-color: #17193B;
+/*                height:100vh;*/
+/*                width: 100vh;*/
+            }
+            
+            @media only screen and (max-width:1080px) {
+                
+                body{
+/*                    width:100vh;*/
+                    height:100vh;
+                    align-content: center;
+                    overflow-x: hidden;
+                    
+                    
+                }
+                .paginationB{
+                    position: fixed;
+                }
+            }
+            
+            /*IPAD*/
+/*
+@media only screen and (min-aspect-ratio: 15/20) and (orientation:portrait){
+    .mobilebubbles{
+        top:100px
+    }
+    #choice div{
+        height:100vh;
+    }
+     #choice div img{
+        height:100%;
+
+        left:-18%;
+ 
+    }
+
+}
+*/
+        </style>
+        
+        
+        
+        
+    </head>
+    
+    <body>
+        
+        <a onclick="navButton()" class="nav">?</a>
+        <nav id="nav" class="nav-content">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="04.html"> ❮ </a> 
+                </li>
+            </ul>
+         </nav>
+        
+        
+     
+        <div id="choice">
+        
+
+<!--        <div data-depth="0.2"><img src="05/05_panel_1.jpg"></div>-->
+    
+           <div data-depth="0.1"><img src="05/05_panel_1a.png"></div> 
+    
+            <div data-depth="0.03" >
+    
+                <div class="arrows">
+                    <a href="06F.html" onclick="clickA()"> 
+                        <img src="05/arrow_1.png" id="arrow1"></a>
+                    <a href="06W.html" onclick="clickB()"> <img src="05/arrow_2.png" id="arrow2"></a>
+                    <a href="06B.html" onclick="clickC()">  <img src="05/arrow_3.png" id="arrow3"></a>
+
+                </div>
+            </div>
+            
+            
+            <div data-depth="0.2"><img src="05/05_panel_1b.png">
+                <div class="bubbles desktopbubbles" style="height:0">
+                <p class="bubble"  style="margin-top:-400px; margin-left:340px; background-color: white " >
+                Well, which <br>quest should we<br> do now? </p>
+                    <img src="05/05_bubble.png" style="position: absolute; height:130px; width:210px; margin-top:-415px; margin-left:335px">
+                </div>
+                
+                
+                <div class="bubbles mobilebubbles" style="height:0; transform:scale(.9)">
+                <p class="bubble " style="margin-top:-79vw; margin-left:65vw; width:200px; position: absolute; background-color: white " >
+                Well, <br>which quest should we do now? </p>
+                    <img src="05/05_bubble.png" style="position: absolute; height:250px; width:310px; margin-top:-80vw; margin-left:62vw">
+                </div>
+            </div>
+            
+    
+            <div data-depth="0.3" >   <img src="05/05_panel_1c.png">
+            </div>
+        
+        </div>
+                 
+        
+            
+           
+        
+        
+        <section class="paginationB" style="margin-top:-5px;"  >
+            <a href="04.html" > ❮  Back </a>
+            <a href="01.html">Home</a>
+            <span title="read the quests before you can continue!"><a href="07.html" id="continue"  >Next ❯ </a></span>
+        </section>
+        
+        
+        
+
+
+    
+            
+ 
+            <script>
+                
+                
+var choice = document.getElementById('choice');
+var parallaxInstance = new Parallax(choice);
+    
+                 
+function clickA(){
+  sessionStorage.setItem('questA', true);
+//  checkQuests();
+}
+
+function clickB(){
+  sessionStorage.setItem('questB', true);
+//  checkQuests();
+}
+
+function clickC(){
+  sessionStorage.setItem('questC', true);
+//  checkQuests();
+}
+    
+var showContinue = document.getElementById("continue"); 
+//var showBubbles = document.getElementsByClassName("bubbles");
+                
+//showContinue.style.display = 'none';
+
+function checkQuests(){
+  console.log(sessionStorage);
+  if(sessionStorage.getItem('questA') == 'true' && sessionStorage.getItem('questB') == 'true' && sessionStorage.getItem('questC') == 'true' ) {
+      showContinue.style.display = 'inline-block'
+//      showBubbles.style.opacity = '0';
+  }else{
+      showContinue.style.opacity = '.3';
+//      showBubbles.style.opacity = '1';
+      showContinue.style.pointerEvents = 'none';
+  }
+}
+                
+if(sessionStorage.getItem('questA') == 'true'){
+    document.getElementById("arrow1").style.opacity = '.6';
+}           else{
+    document.getElementById("arrow1").style.opacity = '1';
+} 
+                
+                if(sessionStorage.getItem('questB') == 'true'){
+    document.getElementById("arrow2").style.opacity = '.6';
+}           else{
+    document.getElementById("arrow2").style.opacity = '1';
+} 
+                if(sessionStorage.getItem('questC') == 'true'){
+    document.getElementById("arrow3").style.opacity = '.6';
+}           else{
+    document.getElementById("arrow3").style.opacity = '1';
+} 
+                
+checkQuests();
+                
+console.log(sessionStorage.getItem('questA')) 
+console.log(sessionStorage.getItem('questB')) 
+console.log(sessionStorage.getItem('questC')) 
+   
+</script>
+        <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function navButton() {
+    document.getElementById("nav").classList.toggle("navshow");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.nav')) {
+
+    var dropdowns = document.getElementsByClassName("nav-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('navshow')) {
+        openDropdown.classList.remove('navshow');
+      }
+    }
+  }
+}
+</script>
+        
+        
+    </body>
+    
+</html>

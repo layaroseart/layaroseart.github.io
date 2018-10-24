@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+        <link rel="stylesheet" type="text/css" href="styles.css" /> 
+ 
+		<meta name="description" content="overgrown" />  
+        
+		<title>Overgrown 06 - Weeds Quest</title>
+         <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600" rel="stylesheet">
+        
+        
+<!--        jquery-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <!--        gsap-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!--        scrollmagic-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>     
+    <!--        indicators-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+<!--        gsap animation-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#194950">
+<meta name="theme-color" content="#ffffff">
+        
+        <style>
+            body{
+                background-color: #5c6291;
+            }
+            
+        </style>
+        
+        
+        
+        
+    </head>
+    
+    <body>
+        
+   <a onclick="navButton()" class="nav">?</a>
+        <nav id="nav" class="nav-content">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li>
+                <a href="05.html">❯ </a></li>
+            </ul>
+         </nav>
+       
+        
+        
+        
+        <section class="fullsize " style="height:810px">
+            <img src="06weeds/06b_panel_1.jpg">
+            
+            <img src="02/02_eye_a.png" class="eye" style="margin-top:-750px; margin-left:-5px; max-width:180px; transform: rotate(-15deg)" >
+            <img src="02/02_eye_a.png" class="eye" style="margin-top:-430px; margin-left:702px; max-width:300px" >
+            
+            <div class="bubbles">
+                 <p class="bubble" style="top:-546px; left:295px; width:180px ;">Come on, it's this way!</p>
+                
+            </div>
+        </section>
+        
+        <section style="height:210px">
+            <img src="06weeds/06b_panel_2.jpg">
+            
+            <div class="bubbles">
+                 <p class="bubble" style="top:-230px; left:170px; ;">So wait, where are we going?</p>
+                
+            </div>
+        </section>
+        <br><br>
+        
+         <section   id="dark">
+            <img src="06weeds/06b_panel_3.png" style="margin-bottom:0px; z-index: 9999999; height:990px">
+             <img src="02/02_eye_c.png" class="eye" style="margin-top:-540px; margin-left:35px; max-width:180px" >
+             
+            <div class="bubbles">
+                <p class="bubble" style="top:-1007px; left:290px; max-width:250px;">The 'courtyard'<br> is among some ruins..</p>
+                 <p class="bubble" style="top:-710px; left:50px; ">or, I'm not sure if they're ruins...</p>
+                <p class="bubble" style="top:-515px; left:408px; ">or if they're just...</p>
+                <p class="bubble" style="top:-325px; left:290px; ">part of the forest...</p>
+                
+                
+                
+            </div>
+             <div id="weedy1" style="p height:80px; margin-top:80px; position: absolute; "></div>
+        </section>
+        
+        <section class="fullsize " id="weedy" style="background-image: url(06weeds/06b_panel_4.jpg); background-size: contain; height:824px">
+            
+            
+        
+            <img src="06weeds/06b_panel_4a.jpg" class="weedy">
+            <img src="06weeds/06b_panel_4b.jpg" class="weedy2" style="top:-828px; position: relative">
+            
+            <img src="02/02_eye_a.png" class="eye" style="margin-top:-1600px; margin-left:120px; max-width:180px" >
+            <img src="02/02_eye_a.png" class="eye" style="margin-top:-1550px; margin-left:650px; max-width:140px; transform: rotate(-20deg)" >
+        
+        
+        </section>
+        
+        <section style="margin-top:50px">
+            <img src="06weeds/06b_panel_5.jpg" class="border">
+            <div class="bubbles">
+                 <p class="bubble" style="top:-335px; left:260px; max-width:250px;">I'm just supposed to... clean this whole place up?</p>
+                
+            </div>
+        
+        </section>
+        
+        <section >
+            <img src="06weeds/06b_panel_6.jpg" style="width:400px; margin-left:400px" class="border">
+            <div class="bubbles">
+                 <p class="bubble " style="top:-363px; left:200px; max-width:250px;">well, not just you! I'm here to help!</p>
+                
+            </div>
+        
+        </section>
+        
+        
+        <section style="margin-top:500px;">
+            <img src="06weeds/06b_panel_8.png">
+        </section>
+        
+        
+        <section style="width:600px;margin: -30px auto 170px;">
+            <img src="06weeds/06b_panel_9.jpg" >
+            
+            <div class="bubbles">
+                 <p class="bubble " style="top:-535px; left:378px;">Hey, look!</p>
+                <p class="bubble" style="top:-463px; left:90px; max-width:250px;">There are little orchids and things in here...</p>
+                
+            </div>
+        </section>
+       
+        <section >
+            <img src="06weeds/06b_panel_10.jpg">
+            <div class="bubbles">
+                 <p class="bubble " style="top:-505px; left:20px; max-width:280px">We probably<br> just need to remove these big weeds smothering them,</p>
+                <p class="bubble small" style="top:-276px; left:267px; ">but, delicately, somehow...</p>
+                
+            </div>
+        </section>
+        <br><br>
+        
+        <section style="width:600px; margin: 80px auto; ">
+            <img src="06weeds/06b_panel_11.jpg" >
+            
+        </section>
+        
+        <section>
+            <img src="06weeds/06b_panel_11a.jpg" >
+            <div class="bubbles">
+                 <p class="bubble fey" style="top:-625px; left:234px;">Hrmm...</p>
+                <p class="bubble fey" style="top:-510px; left:325px; max-width:230px;">this is taking soooo long, i'm bored</p>
+                <p class="bubble fey" style="top:-195px; left:400px; max-width:230px;">well, aren't you<br> the one that set them this task?</p>
+                
+            </div>
+            
+        </section>
+            
+        
+        <section style="margin-bottom: 60px">
+            <img src="06weeds/06b_panel_11b.jpg" style="width:700px; margin:0 50px;" >
+            
+            <div class="bubbles">
+                 <p class="bubble fey" style="top:-386px; left:-5px; max-width:280px; border-radius: 35%">don't you just <br>love to watch<br> the little things <br>toiling away?</p>
+            </div>
+            
+            <img src="02/02_eye_b.png" class="eye" style="margin-top:-307px; margin-left:352px; max-width:50px; transform: rotate(12deg)" >
+        
+        </section>
+        
+        
+  
+        
+        
+        <section  id="light">
+            <img src="06weeds/06b_panel_12.png">
+            
+            <div class="bubbles" id="light">
+                 <p class="bubble" style="top:-950px; left:555px; max-width:280px">what is that....</p>
+            </div>
+        </section>
+        
+        <br><br>
+        <section>
+            <img src="06weeds/06b_panel_12.jpg" style="width:600px; margin-left:100px">
+        </section>
+        <br><br>
+        
+        <section>
+            <img src="06weeds/06b_panel_13.jpg">
+        </section>
+        
+        <section class="fullsize" style="height:345px" id="cut">
+            <img src="06weeds/06b_panel_14.png" style="position: absolute; width:1600px; margin: 0 -30%" class="cut1">
+            <img src="06weeds/06b_panel_14a.png" style="position: relative; width:1600px; margin: 0 -30%" class="cut2">
+            <img src="06weeds/06b_panel_14c.png" style="position: relative; width:1600px; margin: -345px -30% 0" class="cut3">
+        </section>
+         
+        <section style="margin-top:-10px">
+            <img src="06weeds/06b_panel_15.jpg">
+            <div class="bubbles">
+                 <p class="bubble" style="top:-255px; left:325px; max-width:280px">oh, sweet!</p>
+            </div>
+        </section>
+        
+        <section style="height:70px" class="desktopbubbles">
+        </section>
+        
+        <section class="fullsize big" id="cleaning" style="background-image: url(06weeds/06b_panel_16.jpg); height:696px; background-size: contain; overflow: hidden; margin-top:100px">
+            
+            <img src="06weeds/06b_panel_16.jpg" style="position: absolute; display: block; opacity: 0; z-index: 99999" class="weedtop">
+            
+            <img src="06weeds/06b_weed_1.png" style=" margin-left:480px; margin-top:40px" class="weed" >
+            
+            
+
+            <img src="06weeds/06b_weed_2.png" style=" margin-left:690px;margin-top: 155px; " class="weed" >
+          <img src="06weeds/06b_weed_3.png" style=" margin-left:500px; margin-top:180px" class="weed" >
+            <img src="06weeds/06b_weed_4.png" style=" margin-left:300px; margin-top:15px" class="weed" >
+           <img src="06weeds/06b_weed_5.png" style=" margin-left:315px; margin-top:170px" class="weed" >
+             <img src="06weeds/06b_weed_6.png" style=" margin-left:545px; margin-top:375px" class="weed" >
+              <img src="06weeds/06b_weed_7.png" style=" margin-left:350px; margin-top:345px" class="weed" >
+            <img src="06weeds/06b_weed_8.png" style=" margin-left:160px; margin-top:180px" class=" weedfirst" >
+
+            <img src="06weeds/06b_weed_9.png" style=" margin-left:180px; margin-top:365px; width:240px" class="weed" >
+            <img src="06weeds/06b_weed_10.png" style=" margin-left:10px; margin-top:380px" class="weed" >
+             <img src="06weeds/06b_weed_11.png" style=" margin-left:5px; margin-top:200px" class="weed" >
+            
+            
+<!--            onmouseover="this.className='weedhover'"-->
+            
+            
+            
+        </section>
+        
+        <div style="margin-top:-200px;margin-bottom:250px" id="cleaningafter"></div>
+        
+        <section class="desktopbubbles" style="height:150px">
+            </section>
+        
+        
+        <section style="background-image: url(06weeds/06b_panel_17.jpg); background-size: contain; height:456px" id="faery">
+            <img src="06weeds/06b_panel_17a.jpg" class="faery">
+            
+            <div class="bubbles">
+                 <p class="bubble faery1" style="top:-470px; left:90px;border-radius: 40% ">how do we know when we're done...?</p>
+                <p class="bubble " style="top:-450px; left:400px; ">are they <br>going to show up or-<span class="faery2" > ahh!</span></p>
+<!--                <p class="bubble fey faery2" style="top:-450px; left:400px; ">hello</p>-->
+                </div>
+            
+            
+        </section>
+        
+        <section style="width:600px; transform: rotate(-5deg); margin: 50px auto ">
+            <img src="06weeds/06b_panel_18.jpg">
+        </section>
+        
+       
+        <section style="background-image: url(06weeds/06b_panel_19b.jpg); background-size: contain; height:456px" id="bye">
+            <img src="06weeds/06b_panel_19.jpg" class="bye">
+            <div class="bubbles">
+                 <p class="bubble fey bye1" style="top:-470px; left:30px; max-width:280px">ahhh, finally!</p>
+                <p class="bubble fey bye2" style="top:-410px; left:490px; ">my flowers can grow now!</p>
+                </div>
+        </section>
+        
+        
+        <section>
+            <img src="06weeds/06b_panel_21.jpg" style="width:500px; margin: 100px 150px 150px  ;">
+            <div class="bubbles">
+                <p class="bubble " style="top:-478px; left:355px; max-width:110px; border-radius: 40%;">what?! where-</p>
+                 <p class="bubble " style="top:-437px; left:563px; max-width:150px; border-radius: 40%">where'd<br> it go..?</p>
+               
+                </div>
+        </section>
+        
+        <section>
+<!--            <img src="06weeds/06b_panel_22.jpg" style="width:500px; margin: 0 150px;">-->
+            <div class="bubbles">
+                <img src="06weeds/bubble.png" style="margin:-240px 0 0 250px; width:400px">
+                 <p class="bubble" style="top:-177px; left:463px; ">dunno..</p>
+                 <p class="bubble small" style="top:-90px; left:265px; width:370px;border-radius: 45%">seems like we're done with this one, though?</p>
+                
+                </div>
+        </section>
+        
+      
+        
+        
+      
+        <section class="paginationB" >
+                <a href="01.html">Home</a>
+                <a href="05.html">Next ❯ </a></section> 
+        
+        
+        
+        
+            <script>
+        
+        
+           $(document).ready(function () {
+       
+    
+    var controller = new ScrollMagic.Controller();
+    
+
+  //dark
+    var dark = new TimelineMax();
+                
+                dark.to("body", 3, {backgroundColor:"#213148"})
+                   .to("body", 3, {backgroundColor:"#2f4d38"}, "+=2")
+               ;
+               
+               
+ //light
+    var light = new TimelineMax();
+                
+                light.to("body", 3, {backgroundColor:"#617949"})
+               ;
+               
+               
+ 
+    //weedy
+     var weedy = new TimelineMax();
+                
+                weedy.from(".weedy", 2, {opacity:0,},"+5")
+                    .from(".weedy2", 2, {opacity:0,},"+9")
+               ;
+               
+               
+ var cut = new TimelineMax();
+                
+                cut.from(".cut2", 1, {opacity:0,})
+               .to(".cut1", .3, {opacity:0,}, 0)
+               .from(".cut3", .1, {opacity:0,})
+               .to(".cut2", .1, {opacity:0,}, 1)
+               
+               ;
+               
+    var faery = new TimelineMax();
+               faery.from(".faery", .05, {opacity:0})
+               .to(".faery1", .05, {opacity:0})
+               .from(".faery2", .1, {opacity:0}, "+=.2")
+                   ;
+               
+    var bye = new TimelineMax();
+                
+                bye.to(".bye", .2, {opacity:0,})
+               .to(".bye1", .2, {opacity:0,}, .1)
+               .to(".bye2", .2, {opacity:0,}, .1)
+               ;
+               
+               
+     var weedfirst = new TimelineMax();
+               weedfirst.to(".weedfirst", 2, {opacity:0})
+;     
+               
+    var cleaning = new TimelineMax();
+               cleaning.from(".weedtop", .1, {display: "none"})
+                   .to(".weedtop", 2, {opacity:1})
+                   
+               ;
+//               
+    $(".weed").on("mouseenter", function () {
+  $(this).addClass('weedhover');
+});
+               
+       //cut
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#cut", duration: 200, triggerHook: .5})
+       
+.setTween(cut)
+//  .addIndicators({name: "weedy1"}
+  .addTo(controller);
+               
+               
+               
+              //dark
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#dark", duration: 2700, triggerHook: .8})
+.setTween(dark)
+//  .addIndicators({name: "weedy1"}
+  .addTo(controller);
+               
+               //light
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#light", duration: 5000, triggerHook: .2})
+.setTween(light)
+//  .addIndicators({name: "weedy1"}
+  .addTo(controller);
+               
+               
+               
+if ( $(window).width() > 1090) {  
+    
+    //weedy
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#weedy1",duration: 1150, triggerHook: 0})
+.setTween(weedy.delay(2))
+//  .setTween(weedy)
+.setPin('#weedy', {pushFollowers: false})
+//  .addIndicators({name: "weedy1"}
+  .addTo(controller);
+    
+
+    
+    
+     //cleaning
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#cleaning", duration: 500,triggerHook: .1 })
+    
+//    .setTween(weedfirst)
+    .setPin('#cleaning')
+  .addTo(controller);
+    
+    
+    
+      //cleaning first weed
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#cleaning", duration: 0,triggerHook: .1 })
+    
+    
+   .setTween(weedfirst)
+    .reverse(false)
+
+  .addTo(controller);
+    
+    
+    
+    
+//    //cleaningafter
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#faery", duration: 100 ,triggerHook: 1})
+    
+    
+    .setTween(cleaning)
+    
+//  .addIndicators({name: "cleaningafter"})
+  .addTo(controller);
+
+    
+      //faery
+    
+var scene = new ScrollMagic.Scene({
+    triggerElement: "#faery",
+    duration: 0,
+    triggerHook: .3 })  
+.setTween(faery.delay(.4))
+//  .addIndicators({name: "faery desk"})
+.addTo(controller);
+    
+    
+    //bye
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#bye",duration: 0, triggerHook: .1})
+.setTween(bye.delay(1))
+//  .addIndicators({name: "bye desk"})
+ .addTo(controller);
+  
+    
+    
+} else {
+    
+
+    
+     //weedy
+    
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#weedy", duration: 1050,triggerHook: .1 })
+    
+  .setTween(weedy)
+.setPin('#weedy', {pushFollowers: false})
+//  .addIndicators({name: "weedy"})
+  .addTo(controller); }
+               
+                    //cleaning
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#cleaning", duration: 200,triggerHook: .5 })
+  
+  .addTo(controller);
+               
+                //cleaning first weed
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#cleaning", duration: 0,triggerHook: .5 })
+    
+    
+   .setTween(weedfirst)
+    .reverse(false)
+
+  .addTo(controller);
+    
+    
+//    //cleaningafter
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#cleaningafter", duration: 100 ,triggerHook: .5})
+    
+
+    .setTween(cleaning)
+//  .addIndicators({name: "cleaningafter"})
+  .addTo(controller);
+              
+               
+               
+//faery
+    
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#faery", duration: 0, triggerHook: .5}) 
+  .setTween(faery)
+//  .addIndicators({name: "faery mobile"})
+  .addTo(controller);
+          
+//bye
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#bye", duration: 0, triggerHook: .4})   
+.setTween(bye)
+//  .addIndicators({name: "bye mobile"})
+  .addTo(controller);
+  
+});
+            
+           
+        
+        </script>
+        
+           <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function navButton() {
+    document.getElementById("nav").classList.toggle("navshow");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.nav')) {
+
+    var dropdowns = document.getElementsByClassName("nav-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('navshow')) {
+        openDropdown.classList.remove('navshow');
+      }
+    }
+  }
+}
+</script>
+        
+        
+    </body>
+    
+</html>
