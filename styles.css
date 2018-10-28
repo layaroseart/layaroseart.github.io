@@ -283,7 +283,7 @@ iframe{
                 font-size:30px;
                 background-color: white;
 /*                background-color: #fff8da;*/
-                border-radius:35%;
+                border-radius:36%;
                 padding:15px 12px;
     z-index: 999999;
     
@@ -531,6 +531,10 @@ stroke: #b9e3ce;
                 width:550px; margin: -190px 150px 0;
    
             }
+#svgtitle.st0:hover
+{
+    fill:#d97c42;}
+
 
 /*MOBILE*/
 
