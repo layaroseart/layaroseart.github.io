@@ -31,6 +31,18 @@
 <meta name="msapplication-TileColor" content="#194950">
 <meta name="theme-color" content="#ffffff">
         
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125484487-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125484487-6');
+</script>
+
+        
         <style>
             body{
                 background-color: #5c6291;
@@ -187,14 +199,15 @@
         
         <section  id="light">
             <img src="06weeds/06b_panel_12.png">
+            <img src="06weeds/glow.png" style="position: relative;top:-1180px;width:400px; left:350px" class="glow">
             
             <div class="bubbles" id="light">
-                 <p class="bubble" style="top:-950px; left:555px; max-width:280px">what is that....</p>
+                 <p class="bubble" style="top:-1259px; left:555px; max-width:190px">what is that....</p>
             </div>
         </section>
         
-        <br><br>
-        <section>
+      
+        <section style="margin-top:-250px">
             <img src="06weeds/06b_panel_12.jpg" style="width:600px; margin-left:100px">
         </section>
         <br><br>
@@ -331,6 +344,13 @@
                 light.to("body", 3, {backgroundColor:"#617949"})
                ;
                
+    
+                //glow
+     var glow = new TimelineMax();
+                
+                glow.from(".glow", 1.5, {opacity:0, yoyo:true, repeat:10,  })
+
+               ;
                
  
     //weedy
@@ -403,6 +423,12 @@
   .addTo(controller);
                
                
+               //glow
+    var scene = new ScrollMagic.Scene({
+    triggerElement: ".glow", duration: 0, triggerHook: .6})
+.setTween(glow)
+//  .addIndicators({name: "weedy1"}
+  .addTo(controller);
                
 if ( $(window).width() > 1090) {  
     

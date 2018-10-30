@@ -380,8 +380,13 @@ iframe{
     
 }
  .desktopbubbles p{
-    font-size: 20px;
+/*    font-size: 20px;*/
      max-width: 160px
+}
+
+#trigger .desktopbubbles p, #choice .desktopbubbles p{
+    font-size: 20px;
+    max-width: 160px
 }
 
 .ipadbubbles{
@@ -566,9 +571,14 @@ stroke: #b9e3ce;
         
 } 
     .mobilebubbles p{
-        font-size: 34px;
+/*        font-size: 34px;*/
         max-width:250px;
     }
+    
+    #trigger .mobilebubbles p, #choice .mobilebubbles p{
+    font-size: 34px;
+        max-width:250px;
+}
     .desktopbubbles{
     display: none;
 }
