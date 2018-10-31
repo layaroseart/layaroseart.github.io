@@ -430,6 +430,33 @@
 //  .addIndicators({name: "weedy1"}
   .addTo(controller);
                
+               
+               
+               
+if ( $(window).width() > 2560)
+                   
+                   {
+                        //weedy
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#weedy1",duration: 1150, triggerHook: .22})
+.setTween(weedy.delay(2))
+//  .setTween(weedy)
+.setPin('#weedy', {pushFollowers: false})
+//  .addIndicators({name: "weedy1"}
+  .addTo(controller);
+                       
+                     //cleaning
+    var scene = new ScrollMagic.Scene({
+    triggerElement: "#cleaning", duration: 500,triggerHook: .3 })
+    
+//    .setTween(weedfirst)
+    .setPin('#cleaning')
+  .addTo(controller);   
+                       
+                   }
+    
+ else 
+               
 if ( $(window).width() > 1090) {  
     
     //weedy

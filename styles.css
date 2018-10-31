@@ -726,25 +726,26 @@ stroke: #b9e3ce;
        
 }
 
-/*
-@media only screen and (min-width:3000px) {
+@media only screen and (min-width:2560px) {
+    body{
+/*        background-color:blue;*/
+    }
     
     section{
      
     }
     .fullsize{
-           transform: scale(1.05) ;
+/*           transform: scale(1.05) ;*/
             
     }
     .big{
-        transform: scale(1.5)
+/*        transform: scale(1.5)*/
  
 }
     
     #choice{
-        transform: scale();
+        margin-top:15vh;
     }
 }
-*/
 
 

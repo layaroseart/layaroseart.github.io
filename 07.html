@@ -134,7 +134,7 @@
                 <p class="bubble small" style="top:-546px; left:278px; ">I've done what you asked...</p>
              </div></section>
         
-        <section>
+        <section style="margin-top:0px">
             <img src="07/07_panel_8.jpg">
             
             <div class="bubbles">
@@ -238,6 +238,7 @@
         <section class="fullsize" style="height:1144px; overflow-x:visible; " id="run">
             <img src="07/07_panel_19b.jpg"  style="width:1600px; margin:0 -28%">
             <img src="07/07_panel_19.jpg" class="run" style="position: relative; width:1600px; margin:0 -28%;margin-top:-1145px; top:-21px">
+            <div style="position: relative;top:-900px" class="runpin"></div>
         </section>
        
 <!--        background-image: url(07/07_panel_19b.jpg); background-size: contain; margin-bottom-600px
@@ -358,7 +359,25 @@ var run = new TimelineMax();
                
                
                
-               
+ if ( $(window).width() > 2560)
+                   
+                   {
+                       
+                        //run
+    var scene = new ScrollMagic.Scene({triggerElement: "#run",   duration: 450, triggerHook: 0
+  })
+    
+.setTween(run)
+    .setPin("#run")
+
+//  .addIndicators({name: "run desk"})
+
+  .addTo(controller); 
+                       
+                       
+                   }
+    
+ else               
 if ( $(window).width() > 1090) {  
     
 
