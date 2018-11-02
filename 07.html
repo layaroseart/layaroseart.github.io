@@ -85,14 +85,14 @@
         </section>
         
         
-        <section class="fullsize" style="height:1800px">
+        <section class="fullsize" style="height:1800px; ">
             <img src="07/07_panel_1.jpg" >
-            <img src="07/07_panel_1b.jpg" style="position: relative; top:-1796px; opacity:0" class="blackout" >
+            <img src="07/07_panel_1b.jpg" style="position: relative; margin-top:-1796px; top:-20px; opacity:0" class="blackout" >
                 <img src="02/02_eye_a.png" class="eye" style="margin-top:-2465px; margin-left:-50px; max-width:300px; transform:rotate(-10deg)" >
                 <img src="02/02_eye_b.png" class="eye e2" style="margin-top:-2550px; margin-left:630px; max-width:300px; transform:rotate(-10deg)" >
             
             <div class="bubbles">
-            <p class="bubble" style="top:-2474px; left:140px; max-width: 250px" id="blackout">we've done all three tasks now, right? so how-</p>
+            <p class="bubble" style="top:-699px; left:140px; max-width: 250px" id="blackout">we've done all three tasks now, right? so how-</p>
             
             </div>
         
@@ -359,12 +359,12 @@ var run = new TimelineMax();
                
                
                
- if ( $(window).width() > 2560)
+ if ( $(window).width() > 2540)
                    
                    {
                        
                         //run
-    var scene = new ScrollMagic.Scene({triggerElement: "#run",   duration: 450, triggerHook: 0
+    var scene = new ScrollMagic.Scene({triggerElement: "#run",   duration: 100, triggerHook: 0
   })
     
 .setTween(run)

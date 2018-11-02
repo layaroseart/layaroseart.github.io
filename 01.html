@@ -261,7 +261,7 @@ var control = new ScrollMagic.Controller();
     //PHONE
                
                
-if ( $(window).width() > 2560)
+if ( $(window).width() > 2520)
                    
                    {
                        
@@ -269,7 +269,7 @@ if ( $(window).width() > 2560)
                 
                 walk.to("body", .1, {backgroundColor: '#081138'}, "+=.20")
     .from(".pagination", .1, {opacity:0})
-                    .to("#trigger", 1,  {left:-1900}, 0)
+                    .to("#trigger", 1,  {left:-1400}, 0)
     .to(".lookout",.02, {opacity:0}, 0)
     .to(".walktrees", .7, {x:-250},.3 )
     .to(".bubbles", .7, {x:-120},.3 )
@@ -280,7 +280,7 @@ if ( $(window).width() > 2560)
  
                        
                        new ScrollMagic.Scene({
-        triggerElement: "#trigger", duration: 1500, triggerHook: .15,
+        triggerElement: "#trigger", duration: 1900, triggerHook: .15,
     })
         
         .setTween(walk)
