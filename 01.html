@@ -188,8 +188,13 @@
             
             <div style="position: absolute; width:300px">
                     
-                 <div class="paginationB desktopbubbles" style="bottom: 10vh; left:2700px; position: absolute">
+                 <div class="paginationB desktopbubbles next" style="bottom: 2vh; right:-40vw; position: fixed">
                     <a href="02.html">Next ❯ </a></div>
+                
+<!--
+                <div class="paginationB largescreen" style="bottom: 10vh; left:2750px; position: absolute">
+                    <a href="02.html">Next ❯ </a></div>
+-->
                     
                     <div class="paginationB mobilebubbles" style="bottom: 00px; left:3700px; position: absolute ">
                     <a href="02.html">Next ❯ </a></div>
@@ -304,6 +309,7 @@ if ( $(window).width() > 2520)
     .to(".bubbles", .7, {x:-120},.3 )
     .to(".walktrees2", .7, {x:-150},.3 )
     .to(".nav, nav, nav a", .05, {color:"white"}, 0)
+         .from(".next", .2, {opacity:0},.45)
    
               ;
  

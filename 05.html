@@ -53,6 +53,10 @@
 /*                width: 100vh;*/
             }
             
+            .show{
+/*                display:none*/
+            }
+            
             @media only screen and (max-width:1080px) {
                 
                 body{
@@ -152,7 +156,7 @@
            
         
         
-        <section class="paginationB" style="margin-top:-5px;"  >
+        <section class="paginationB show" style="margin-top:-5px; "  >
             <a href="04.html" > ❮  Back </a>
             <a href="01.html">Home</a>
             <span title="read the quests before you can continue!"><a href="07.html" id="continue"  >Next ❯ </a></span>
@@ -166,6 +170,15 @@
             
  
             <script>
+                
+                
+//            function showPage(){
+//                document.getElementById("continue").style.display="none"
+//            } 
+                
+                window.onload = function () { document.getElementById("choice").style.display='block';
+                document.getElementByClassName("show").style.display='block';
+                                            }
                 
                 
 var choice = document.getElementById('choice');
