@@ -485,6 +485,28 @@ if ( $(window).width() > 1090) {
         
         </script>
     
+     <script>
+            var Timer = setTimeout(function(){alert('done')}, 5000);
+ 
+ function ResetTimeout()
+ {
+    if(Timer)
+    {
+ 	  clearTimeout(Timer);
+ 	  Timer = setTimeout(function(){window.location.href= 'http://overgrowncomic.com'}, 50000);
+    }
+    else
+ 	  Timer = setTimeout(function(){window.location.href= 'http://overgrowncomic.com'}, 50000);
+ }
+ 
+ if(navigator.userAgent.indexOf('MSIE')>-1)
+ 	document.onmousemove = ResetTimeout;
+ else
+ 	window.onmousemove = ResetTimeout;
+ window.onclick = ResetTimeout;
+        
+        </script>
+    
        <script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */

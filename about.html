@@ -95,7 +95,16 @@
     section{
         width:80%
     }
-                
+          
+    @media only screen and (min-width:2540px) {
+        
+        p{font-size: 2em}
+        
+        section{
+            transform: scale(1.5);
+        }
+        
+    }
                 
             }
            
@@ -182,6 +191,8 @@ Everything else was coded myself (with help from constant googling things, of co
             <p>Tanya Marriott, Caroline Campbell, Tristam Sparks, Tim Turnidge, Donald Preston and all the other lecturers at Massey who helped me.
 </p>
             <p>My supporters on patreon, and you, for reading it! </p>
+            <br><br>
+            <p>[External links are disabled during Exposure '18 exhibition, for display purposes]</p>
         
         </section>
         
@@ -191,6 +202,28 @@ particlesJS.load('particles-js', 'particlesjs-config.json', function() {
   console.log('callback - particlejs-config.js config loaded');
 });
 </script>
+        
+        <script>
+            var Timer = setTimeout(function(){alert('done')}, 5000);
+ 
+ function ResetTimeout()
+ {
+    if(Timer)
+    {
+ 	  clearTimeout(Timer);
+ 	  Timer = setTimeout(function(){window.location.href= 'http://overgrowncomic.com'}, 30000);
+    }
+    else
+ 	  Timer = setTimeout(function(){window.location.href= 'http://overgrowncomic.com'}, 30000);
+ }
+ 
+ if(navigator.userAgent.indexOf('MSIE')>-1)
+ 	document.onmousemove = ResetTimeout;
+ else
+ 	window.onmousemove = ResetTimeout;
+ window.onclick = ResetTimeout;
+        
+        </script>
     
     </body>
 </html>

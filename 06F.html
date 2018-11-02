@@ -92,7 +92,7 @@
         <section style="height:310px" >
             <img src="06flower/06_panel_2.png" >
             <div class="bubbles">
-                 <p class="bubble " style="top:-400px; left:217px; max-width:160px; border-radius: 45%">
+                 <p class="bubble " style="top:-400px; left:218px; max-width:160px; border-radius: 45%">
                 ah yes, I thought so.</p>
                 
                 <p class="bubble small" style="top:-265px; left:289px;max-width:170px">I know where <br>it grows,<br> I think!
@@ -493,6 +493,28 @@ var scene = new ScrollMagic.Scene({
 });
             
            
+        
+        </script>
+        
+         <script>
+            var Timer = setTimeout(function(){alert('done')}, 5000);
+ 
+ function ResetTimeout()
+ {
+    if(Timer)
+    {
+ 	  clearTimeout(Timer);
+ 	  Timer = setTimeout(function(){window.location.href= 'http://overgrowncomic.com'}, 50000);
+    }
+    else
+ 	  Timer = setTimeout(function(){window.location.href= 'http://overgrowncomic.com'}, 50000);
+ }
+ 
+ if(navigator.userAgent.indexOf('MSIE')>-1)
+ 	document.onmousemove = ResetTimeout;
+ else
+ 	window.onmousemove = ResetTimeout;
+ window.onclick = ResetTimeout;
         
         </script>
         

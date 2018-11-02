@@ -444,21 +444,84 @@ but I guess we've got no other choice...</p>
                
 //if ( $(window).width() > 2540)
 //                   
-//                   {
+//  //shake
 //    var scene = new ScrollMagic.Scene({
-//    triggerElement: "#blargh",
-//    duration: 600,
-//    triggerHook: .2
-//  })
+//    triggerElement: "#shake",duration: 0,triggerHook: .3})
+//    
+//.setTween(shake)
+//  .addTo(controller);
+//    
+//    var scene = new ScrollMagic.Scene({
+//    triggerElement: "#shake",duration: 400, triggerHook: .2})
+//     .setPin("#shake")
+//  .addTo(controller);
+//    
+//    
+//    
+//     //stomp
+//    var scene = new ScrollMagic.Scene({
+//    triggerElement: "#stomp",duration: 0,triggerHook: .6 })
+//    .setTween(stomp)  .addTo(controller);
+//    
+//    
+//    
+//      //blargh
+//    
+//var scene = new ScrollMagic.Scene({
+//    triggerElement: "#blarghtrigger",duration: 0,triggerHook: .3 })
+//    
+//.setTween(blargh)
+//.reverse(false)
+//.addTo(controller);
+//    
+//    var scene = new ScrollMagic.Scene({
+//    triggerElement: "#blargh",duration: 600,   triggerHook: 0 })
 //        
 //
 //.setPin("#blargh", {pushFollowers:false})
-//
-////  .addIndicators({name: "blargh"})
 //.addTo(controller); 
 //   
+//    
+//     //vine
+//    
+//var scene = new ScrollMagic.Scene({
+//    triggerElement: "#vine",duration: 152,triggerHook: .1})
+//    
+//.setPin("#vine")
+//.addTo(controller);
+//    
+//    
+//    
+//         //jump
+//    
+//var scene = new ScrollMagic.Scene({
+//    triggerElement: "#jump",duration: 1350,triggerHook: .1 })
+//    
+//.setTween(jump)
+//.setPin("#jump", {pushFollowers: false})
+//.addTo(controller);
+//    
+//    //lick
+//    
+//var scene = new ScrollMagic.Scene({
+//    triggerElement: "#lick", duration: 0, triggerHook: 0  })
+//.setTween(lick)
+//.addTo(controller);
+//    
+//
+//   //bye
+//    
+//    var scene = new ScrollMagic.Scene({
+//        triggerElement: "#bye", duration: 0, triggerHook: 0 })
+//    
+//    .setTween(bye)
+//.addTo(controller);
+//               
 //                       
-//                   }
+//
+//    
+//               
+////               MAIN SIZE
 //    
 // else 
      if ( $(window).width() > 1090) {  
@@ -511,9 +574,7 @@ var scene = new ScrollMagic.Scene({
   })
     
 .setTween(blargh)
-//.setPin("#blargh")
-.reverse(false)
-//  .addIndicators({name: "blargh"})
+//.reverse(false)
 .addTo(controller);
     
     var scene = new ScrollMagic.Scene({
@@ -624,7 +685,7 @@ var scene = new ScrollMagic.Scene({
   })
     
 .setTween(blargh)
-.reverse(false)
+//.reverse(false)
 //  .addIndicators({name: "blargh"})
 .addTo(controller);
     
@@ -679,7 +740,7 @@ var scene = new ScrollMagic.Scene({
 //  .addIndicators({name: "bye"})
 .addTo(controller);
 
-    
+    //lick
         
 var scene = new ScrollMagic.Scene({
     triggerElement: "#lick", duration: 0, triggerHook: .3  })
@@ -713,6 +774,28 @@ var scene = new ScrollMagic.Scene({
 });
             
            
+        
+        </script>
+        
+         <script>
+            var Timer = setTimeout(function(){alert('done')}, 5000);
+ 
+ function ResetTimeout()
+ {
+    if(Timer)
+    {
+ 	  clearTimeout(Timer);
+ 	  Timer = setTimeout(function(){window.location.href= 'http://overgrowncomic.com'}, 50000);
+    }
+    else
+ 	  Timer = setTimeout(function(){window.location.href= 'http://overgrowncomic.com'}, 50000);
+ }
+ 
+ if(navigator.userAgent.indexOf('MSIE')>-1)
+ 	document.onmousemove = ResetTimeout;
+ else
+ 	window.onmousemove = ResetTimeout;
+ window.onclick = ResetTimeout;
         
         </script>
         

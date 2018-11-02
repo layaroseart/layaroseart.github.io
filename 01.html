@@ -285,7 +285,7 @@ if ( $(window).width() > 2520)
  
                        
                        new ScrollMagic.Scene({
-        triggerElement: "#trigger", duration: 1900, triggerHook: .15,
+        triggerElement: "#trigger", duration: 1900, triggerHook: .25,
     })
         
         .setTween(walk)
@@ -377,6 +377,28 @@ else {
             
                 
             </script>
+        
+         <script>
+            var Timer = setTimeout(function(){alert('done')}, 5000);
+ 
+ function ResetTimeout()
+ {
+    if(Timer)
+    {
+ 	  clearTimeout(Timer);
+ 	  Timer = setTimeout(function(){window.location.href= 'http://overgrowncomic.com'}, 50000);
+    }
+    else
+ 	  Timer = setTimeout(function(){window.location.href= 'http://overgrowncomic.com'}, 50000);
+ }
+ 
+ if(navigator.userAgent.indexOf('MSIE')>-1)
+ 	document.onmousemove = ResetTimeout;
+ else
+ 	window.onmousemove = ResetTimeout;
+ window.onclick = ResetTimeout;
+        
+        </script>
         
         <script>
 /* When the user clicks on the button, 
