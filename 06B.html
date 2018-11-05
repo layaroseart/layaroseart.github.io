@@ -356,7 +356,7 @@ but I guess we've got no other choice...</p>
         
     
         <section class="paginationB" >
-                <a href="01.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="05.html" >Next ❯ </a></section> 
         
         
@@ -778,17 +778,17 @@ var scene = new ScrollMagic.Scene({
         </script>
         
          <script>
-            
+            var Timer = setTimeout(function(){}, 5000);
  
  function ResetTimeout()
  {
     if(Timer)
     {
  	  clearTimeout(Timer);
- 	  Timer = setTimeout(function(){window.location.href= 'http://overgrowncomic.com'}, 50000);
+ 	  Timer = setTimeout(function(){window.location.href= 'http://overgrowncomic.com'}, 40000);
     }
     else
- 	  Timer = setTimeout(function(){window.location.href= 'http://overgrowncomic.com'}, 50000);
+ 	  Timer = setTimeout(function(){window.location.href= 'http://overgrowncomic.com'}, 40000);
  }
  
  if(navigator.userAgent.indexOf('MSIE')>-1)
