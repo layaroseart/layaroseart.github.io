@@ -63,7 +63,7 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li>
-                <a href="05.html">❯ </a></li>
+                <a href="05.html" >❯ </a></li>
             </ul>
          </nav>
        
@@ -316,7 +316,7 @@
       
         <section class="paginationB" >
                 <a href="index.html">Home</a>
-                <a href="05.html">Next ❯ </a></section> 
+                <a href="05.html" id="nextlink">Next ❯ </a></section> 
         
         
         
@@ -588,24 +588,50 @@ var scene = new ScrollMagic.Scene({
         
         </script>
         
-         <script>
-         var Timer = setTimeout(function(){}, 5000);
- function ResetTimeout()
- {
-    if(Timer)
-    {
- 	  clearTimeout(Timer);
- 	  Timer = setTimeout(function(){window.location.href= 'http://overgrowncomic.com'}, 60000);
-    }
-    else
- 	  Timer = setTimeout(function(){window.location.href= 'http://overgrowncomic.com'}, 60000);
- }
+        
+        
+        <script>
+
+    
+var nextLink = document.getElementById("nextlink"); 
+
+
+function newLink(){
+  console.log(sessionStorage);
+  if(sessionStorage.getItem('questA') == 'true' && sessionStorage.getItem('questB') == 'true' && sessionStorage.getItem('questC') == 'true' ) {
+      nextLink.setAttribute('href', '07.html');
+//      showBubbles.style.opacity = '0';
+  }else{
+      nextLink.setAttribute('href', '05.html');
+  }
+}
  
- if(navigator.userAgent.indexOf('MSIE')>-1)
- 	document.onmousemove = ResetTimeout;
- else
- 	window.onmousemove = ResetTimeout;
- window.onclick = ResetTimeout;
+newLink();
+            
+            
+            
+        </script>
+        
+        
+<!--        timeout-->
+         <script>
+//         var Timer = setTimeout(function(){}, 5000);
+// function ResetTimeout()
+// {
+//    if(Timer)
+//    {
+// 	  clearTimeout(Timer);
+// 	  Timer = setTimeout(function(){window.location.href= 'http://overgrowncomic.com'}, 60000);
+//    }
+//    else
+// 	  Timer = setTimeout(function(){window.location.href= 'http://overgrowncomic.com'}, 60000);
+// }
+// 
+// if(navigator.userAgent.indexOf('MSIE')>-1)
+// 	document.onmousemove = ResetTimeout;
+// else
+// 	window.onmousemove = ResetTimeout;
+// window.onclick = ResetTimeout;
         
         </script>
         

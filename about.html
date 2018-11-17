@@ -65,7 +65,6 @@
 }
             
             
-            
             p{
                 font-family: dosis;
                 letter-spacing: .3px;
@@ -86,6 +85,16 @@
                 margin:0;
             }
             
+            #comiclink a{
+                background:#f0e6cb;
+                padding:5px 10px;
+                border-radius: 5%;
+                color:#103C4A;
+                line-height: 2.2;
+                margin-right:2px;
+                white-space: nowrap
+            }
+            
 @media only screen and (max-width:1080px) {
         body{
         background-position: center;
@@ -94,15 +103,30 @@
     
     section{
         width:80%
+            
+            
     }
+    #comiclink a{
+    
+            font-size: 2em;
+
+                margin-right:10px;
+          
+            }
+            }
           
     @media only screen and (min-width:2540px) {
         
-        p{font-size: 2em}
+        body{font-size: 2.5em}
+        h1{
+            font-size:2.5em;
+        }
         
         section{
-            transform: scale(1.5);
+            width:900px;
         }
+        
+        
         
     }
                 
@@ -152,8 +176,8 @@ She has to complete three quests to gain her freedom (but that’s if she even w
             <p>
                 You can find me at:<br>
                 
-                <a href="#">@layahimalaya</a><br>
-            <a href="#">layaroseart.com</a>
+                <a href="https://twitter.com/layahimalaya">@layahimalaya</a><br>
+            <a href="http://layaroseart.com">layaroseart.com</a>
               
 <!--            https://twitter.com/layahimalaya-->
                 
@@ -175,14 +199,42 @@ She has to complete three quests to gain her freedom (but that’s if she even w
         
         <section>
             <h2>HOW DID I MAKE IT?</h2>
-            <p>I used <a href="#">Scrollmagic</a>, 
-                <a href="#">GSAP</a>, <a href="#">parallax.js</a>, <a href="#">particles.js</a>.
-Everything else was coded myself (with help from constant googling things, of course). <a href="#">These</a> csp brushes were used on the home page and page 4.
+            <p>I used <a href="http://scrollmagic.io/ https://greensock.com/">Scrollmagic</a>, 
+                <a href="https://greensock.com/">GSAP</a>, <a href="http://matthew.wagerfield.com/parallax/ ">parallax.js</a>, <a href="https://vincentgarreau.com/particles.js/">particles.js</a>.
+Everything else was coded myself (with help from constant googling things, of course). <a href="https://assets.clip-studio.com/en-us/detail?id=1724801">These</a> csp brushes were used on the home page and page 4.
 </p>
-            <p>If you want to know more about anything, feel free to <a href="#">ask!</a></p>
+            <p>If you want to know more about anything, feel free to <a href="http://overgrowncomic.tumblr.com/ask">ask!</a></p>
         
         </section> 
-<!--        http://scrollmagic.io/ https://greensock.com/ http://matthew.wagerfield.com/parallax/ https://vincentgarreau.com/particles.js/ https://assets.clip-studio.com/en-us/detail?id=1724801 http://overgrowncomic.tumblr.com/-->
+<!--           http://overgrowncomic.tumblr.com/-->
+        
+        
+        <section id="comiclink">            
+            <h2>OTHER COMICS</h2>
+            <p>A few other comics that also use infinite canvas, animation, or other interactive elements that inspired me in some form:</p>
+            <a href="http://www.sbs.com.au/theboat/">The Boat</a>
+            <a href="http://thunderpaw.co/">Thunderpaw</a>
+            <a href="http://www.landofthemagicflute.com/">The Land of the Magic Flute</a>
+            <a href="http://tobecontinuedcomic.com/">To Be Continued</a>
+            <a href="http://hobolobo.net/">The Hobo Lobo of Hamelin</a>
+            <a href="http://florencegame.com/">Florence</a>
+            <a href="http://www.colorlesscomic.com/comic/page-001/">Colorless</a>
+            <a href="https://www.radionz.co.nz/authors/toby%20-morris">Toby Morris' comics</a>
+            <a href="http://www.mothcity.com/"> Moth City</a>
+            <a href="http://emcarroll.com/comics/margot/">Margot's Room</a>
+            <a href="http://emcarroll.com/comics/prince/andthesea.html">The Prince and the Sea</a>
+            <a href="https://gigidigi.itch.io/lady">Lady of the Shard</a>
+            <a href="http://kochab-comic.com/comic/prologue-00">Kochab</a>
+            
+            <br><br>
+            And here's a couple of little comics I made as part of my research:<br>
+            <a href="http://layaart.tumblr.com/littlenemo">Little Nemo in Slumberland</a>  <a href="http://mistlandscomic.tumblr.com/3_06">Mistlands pg 3.06</a>  <a href="http://layaart.tumblr.com/eyes">Eyes</a>
+        
+        
+        </section>
+        
+        
+        
         
         <section>
             <h2>THANKS</h2>
@@ -191,8 +243,8 @@ Everything else was coded myself (with help from constant googling things, of co
             <p>Tanya Marriott, Caroline Campbell, Tristam Sparks, Tim Turnidge, Donald Preston and all the other lecturers at Massey who helped me.
 </p>
             <p>My supporters on patreon, and you, for reading it! </p>
-            <br><br>
-            <p>[External links are disabled during Exposure '18 exhibition, for display purposes]</p>
+          
+          
         
         </section>
         
@@ -204,25 +256,25 @@ particlesJS.load('particles-js', 'particlesjs-config.json', function() {
 </script>
         
         <script>
-            var Timer = setTimeout(function(){}, 5000);
-          
- 
- function ResetTimeout()
- {
-    if(Timer)
-    {
- 	  clearTimeout(Timer);
- 	  Timer = setTimeout(function(){window.location.href= 'http://overgrowncomic.com'}, 50000);
-    }
-    else
- 	  Timer = setTimeout(function(){window.location.href= 'http://overgrowncomic.com'}, 50000);
- }
- 
- if(navigator.userAgent.indexOf('MSIE')>-1)
- 	document.onmousemove = ResetTimeout;
- else
- 	window.onmousemove = ResetTimeout;
- window.onclick = ResetTimeout;
+//            var Timer = setTimeout(function(){}, 5000);
+//          
+// 
+// function ResetTimeout()
+// {
+//    if(Timer)
+//    {
+// 	  clearTimeout(Timer);
+// 	  Timer = setTimeout(function(){window.location.href= 'http://overgrowncomic.com'}, 50000);
+//    }
+//    else
+// 	  Timer = setTimeout(function(){window.location.href= 'http://overgrowncomic.com'}, 50000);
+// }
+// 
+// if(navigator.userAgent.indexOf('MSIE')>-1)
+// 	document.onmousemove = ResetTimeout;
+// else
+// 	window.onmousemove = ResetTimeout;
+// window.onclick = ResetTimeout;
         
         </script>
     

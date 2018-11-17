@@ -357,8 +357,31 @@ but I guess we've got no other choice...</p>
     
         <section class="paginationB" >
                 <a href="index.html">Home</a>
-                <a href="05.html" >Next ❯ </a></section> 
+                <a href="05.html" id="nextlink">Next ❯ </a></section> 
         
+        
+        
+          <script>
+
+    
+var nextLink = document.getElementById("nextlink"); 
+
+
+function newLink(){
+  console.log(sessionStorage);
+  if(sessionStorage.getItem('questA') == 'true' && sessionStorage.getItem('questB') == 'true' && sessionStorage.getItem('questC') == 'true' ) {
+      nextLink.setAttribute('href', '07.html');
+//      showBubbles.style.opacity = '0';
+  }else{
+      nextLink.setAttribute('href', '05.html');
+  }
+}
+ 
+newLink();
+            
+            
+            
+        </script>
         
          <script>
         
@@ -777,6 +800,7 @@ var scene = new ScrollMagic.Scene({
         
         </script>
         
+<!--
          <script>
             var Timer = setTimeout(function(){}, 5000);
  
@@ -798,6 +822,7 @@ var scene = new ScrollMagic.Scene({
  window.onclick = ResetTimeout;
         
         </script>
+-->
         
            <script>
 /* When the user clicks on the button, 
